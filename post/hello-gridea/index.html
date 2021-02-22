@@ -5,14 +5,14 @@
     
 <meta charset="utf-8" >
 
-<title>Hello Gridea | Gridea</title>
+<title>Docker | Gridea</title>
 <meta name="description" content="温故而知新">
 
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
 
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-<link rel="shortcut icon" href="https://andidechuan.github.io/favicon.ico?v=1613958904311">
+<link rel="shortcut icon" href="https://andidechuan.github.io/favicon.ico?v=1613959177419">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
 <link rel="stylesheet" href="https://andidechuan.github.io/styles/main.css">
 
@@ -30,7 +30,7 @@
   <div class="site-header">
     <div class="left">
       <a href="https://andidechuan.github.io">
-        <img class="avatar" src="https://andidechuan.github.io/images/avatar.png?v=1613958904311" alt="" width="32px" height="32px">
+        <img class="avatar" src="https://andidechuan.github.io/images/avatar.png?v=1613959177419" alt="" width="32px" height="32px">
       </a>
       <a href="https://andidechuan.github.io">
         <h1 class="site-title">Gridea</h1>
@@ -83,7 +83,7 @@
             <div class="feature-container" style="background-image: url('https://andidechuan.github.io/post-images/hello-gridea.png')">
             </div>
           
-          <h2 class="post-title">Hello Gridea</h2>
+          <h2 class="post-title">Docker</h2>
           <div class="post-info post-detail-info">
             <span><i class="icon-calendar-outline"></i> 2018-12-12</span>
             
@@ -99,27 +99,2554 @@
             
           </div>
           <div class="post-content">
-            <p>👏  欢迎使用 <strong>Gridea</strong> ！<br>
-✍️  <strong>Gridea</strong> 一个静态博客写作客户端。你可以用它来记录你的生活、心情、知识、笔记、创意... ...</p>
-<!-- more -->
-<p><a href="https://github.com/getgridea/gridea">Github</a><br>
-<a href="https://gridea.dev/">Gridea 主页</a><br>
-<a href="http://fehey.com/">示例网站</a></p>
-<h2 id="特性">特性👇</h2>
-<p>📝  你可以使用最酷的 <strong>Markdown</strong> 语法，进行快速创作</p>
-<p>🌉  你可以给文章配上精美的封面图和在文章任意位置插入图片</p>
-<p>🏷️  你可以对文章进行标签分组</p>
-<p>📋  你可以自定义菜单，甚至可以创建外部链接菜单</p>
-<p>💻  你可以在 <strong>Windows</strong>，<strong>MacOS</strong> 或 <strong>Linux</strong> 设备上使用此客户端</p>
-<p>🌎  你可以使用 <strong>𝖦𝗂𝗍𝗁𝗎𝖻 𝖯𝖺𝗀𝖾𝗌</strong> 或 <strong>Coding Pages</strong> 向世界展示，未来将支持更多平台</p>
-<p>💬  你可以进行简单的配置，接入 <a href="https://github.com/gitalk/gitalk">Gitalk</a> 或 <a href="https://github.com/SukkaW/DisqusJS">DisqusJS</a> 评论系统</p>
-<p>🇬🇧  你可以使用<strong>中文简体</strong>或<strong>英语</strong></p>
-<p>🌁  你可以任意使用应用内默认主题或任意第三方主题，强大的主题自定义能力</p>
-<p>🖥  你可以自定义源文件夹，利用 OneDrive、百度网盘、iCloud、Dropbox 等进行多设备同步</p>
-<p>🌱 当然 <strong>Gridea</strong> 还很年轻，有很多不足，但请相信，它会不停向前 🏃</p>
-<p>未来，它一定会成为你离不开的伙伴</p>
-<p>尽情发挥你的才华吧！</p>
-<p>😘 Enjoy~</p>
+            <p>Docker</p>
+<p>作者：赵科<br>
+归档：学习笔记<br>
+2020/8/30</p>
+<ol>
+<li>目录<br>
+第1章 常用命令	2<br>
+1.1.1 docker介绍	2<br>
+1.1.2 安装Docker	2<br>
+1.1.3 帮助命令	3<br>
+1.1.4 镜像命令	3<br>
+1.1.5 容器命令	4<br>
+1.1.6 常用其他命令	5<br>
+1.1.7 命令小结	6<br>
+第2章 部署服务	7<br>
+2.1.1 部署Nginx	7<br>
+2.1.2 部署tomcat	8<br>
+2.1.3 部署es+kibana	8<br>
+2.1.4 部署可视化	9<br>
+第3章 Docker镜像讲解	10<br>
+3.1.1 镜像是什么	10<br>
+3.1.2 Docker镜像加载原理	11<br>
+3.1.3 理解	12<br>
+3.1.4 commit镜像	14<br>
+第4章 容器数据卷	14<br>
+4.1.1 什么是容器数据卷	14<br>
+4.1.2 使用数据卷	15<br>
+4.1.3 实战安装MySQL	16<br>
+4.1.4 具名和匿名挂载	16<br>
+4.1.5 初识Dockerfile	18<br>
+4.1.6 数据卷容器	20<br>
+第5章 Dockerfile	22<br>
+5.1.1 Dockerfile介绍	22<br>
+5.1.2 Dockerfile构建过程	23<br>
+5.1.3 docker的指令	24<br>
+5.1.4 实战测试	24<br>
+5.1.5 CMD和CNTRYPOINT的区别	26<br>
+5.1.6 实战：tomcat镜像	28<br>
+5.1.7 发布自己的镜像	29<br>
+5.1.8 发布到阿里云镜像上	30</li>
+</ol>
+<p>第1章 常用命令<br>
+1.1.1 docker介绍<br>
+docker的三大核心组件	镜像	容器	仓库<br>
+镜像存放在仓库中，启动后变为容器<br>
+1.1.2 安装Docker<br>
+登录https://docs.docker.com/get-docker/选择版本进行下载<br>
+如果系统内已有Docker需要先进行卸载<br>
+yum remove docker <br>
+docker-client <br>
+docker-client-latest <br>
+docker-common <br>
+docker-latest <br>
+docker-latest-logrotate <br>
+docker-logrotate <br>
+docker-engine<br>
+安装需要的安装包<br>
+yum install -y yum-utils</p>
+<h1 id="设置镜像的仓库">设置镜像的仓库</h1>
+<p>yum-config-manager <br>
+--add-repo <br>
+https://download.docker.com/linux/centos/docker-ce.repo			#默认是国外的<br>
+yum-config-manager <br>
+--add-repo <br>
+https://m2uqq1c2.mirror.aliyuncs.com					  #建议用阿里云的<br>
+#更新yum软件包索引<br>
+yum	makecache  fast<br>
+#安装docker相关的内容		docker-ce	社区版	ee企业版<br>
+yum install docker-ce docker-ce-cli containerd.io<br>
+#启动docker<br>
+systemctl  start  docker<br>
+docker	version  #查看是否安装成功和版本信息<br>
+#测试hello-world<br>
+docker	run	hello-world<br>
+阿里云镜像加速<br>
+登录阿里云</p>
+<p>配置加速<br>
+sudo mkdir -p /etc/docker<br>
+sudo tee /etc/docker/daemon.json &lt;&lt;-'EOF'<br>
+{<br>
+&quot;registry-mirrors&quot;: [&quot;https://m2uqq1c2.mirror.aliyuncs.com&quot;]<br>
+}<br>
+EOF<br>
+sudo systemctl daemon-reload<br>
+sudo systemctl restart docker<br>
+成功！<br>
+1.1.3 帮助命令<br>
+docker	version		#docker的详细信息<br>
+docker	info			#显示docker的系统信息<br>
+docker	命令 –help	#帮助命令<br>
+1.1.4 镜像命令<br>
+docker images		#查看所有本地的主机上的镜像<br>
+[root@localhost ~]# docker images		#查看所有本地的主机上的镜像<br>
+REPOSITORY          TAG                 IMAGE ID            CREATED             SIZE</p>
+<p>#解释<br>
+REPOSITORY	镜像的仓库源<br>
+TAG			镜像的标签<br>
+IMAGE ID		镜像的ID<br>
+CREATED		镜像的创建时间<br>
+SIZE			镜像的大小<br>
+#可选项<br>
+-a, --all			列出所有镜像<br>
+-q, --quiet		只显示镜像ID</p>
+<p>docker	search	搜索镜像<br>
+docker	search	[镜像名称]<br>
+#可选项，通过收藏来过滤<br>
+--filter=STARS=3000		搜出来的镜像就是STARS大于3000的</p>
+<p>docker	pull		下载镜像<br>
+docker 	pull [镜像名称]<br>
+docker 	pull [镜像名称]:[版本号]</p>
+<p>1.1.5 容器命令<br>
+说明：我们有了镜像才可以创建容器，linux，下载一个centos镜像来测试<br>
+docker	pull	 centos<br>
+新建容器并启动<br>
+docker	run	 [可选参数] images<br>
+#参数说明<br>
+--name=”Name”		#容器名字	tomcat01	tomcat02,用来区分容器<br>
+-d					后台方式运行<br>
+-it					使用交互方式运行，进入容器产看内容<br>
+-p					指定容器的端口 -p	8080:8080		主机端口:容器端口<br>
+-P					随机指定端口<br>
+#测试	启动并进入容器<br>
+[root@localhost ~]# docker run -it centos /bin/bash<br>
+[root@8a1f989ad7da /]# ls		#查看容器内的centos，基础版本，很多命令都是不完善的！<br>
+bin  dev  etc  home  lib  lib64  lost+found  media  mnt  opt  proc  root  run  sbin  srv  sys  tmp  usr  var<br>
+[root@8a1f989ad7da /]# exit		#从容器中退回主机<br>
+exit<br>
+列出所有的运行的容器<br>
+#docker	ps	命令	<br>
+-a		#列出当先正在运行的容器，带出历史运行过的容器<br>
+-n=？	#显示最近创建的容器<br>
+-q		#只显示容器的编号<br>
+[root@localhost ~]# docker ps<br>
+CONTAINER ID        IMAGE               COMMAND             CREATED             STATUS              PORTS               NAMES<br>
+[root@localhost ~]# docker ps -a<br>
+CONTAINER ID        IMAGE               COMMAND             CREATED             STATUS                      PORTS               NAMES<br>
+8a1f989ad7da        centos              &quot;/bin/bash&quot;         29 minutes ago      Exited (0) 53 seconds ago                       kind_khorana<br>
+[root@localhost ~]# docker ps -aq<br>
+8a1f989ad7da<br>
+退出容器<br>
+exit		#直接停止并退出容器<br>
+crl + P + Q	#容器不停止退出<br>
+进入后台运行的容器<br>
+docker	exec  -it  容器名  /bin/bash<br>
+删除镜像<br>
+docker	rmi	-f	[镜像ID]					#删除镜像<br>
+docker	rmi	-f	$(docker  images  -aq)		#删除所有镜像<br>
+docker	ps	-a|xargs	docker	rm				#删除所有镜像<br>
+启动和停止容器<br>
+docker	start	  	容器id		#启动容器<br>
+docker	restart 	容器id		#重启容器<br>
+docker	stop		容器id		#停止当前正在运行的容器	<br>
+docker	kill		容器id		#强制停止当前容器<br>
+1.1.6 常用其他命令<br>
+后台启动容器<br>
+docker	run	-d	镜像名<br>
+[root@localhost ~]# docker run -d centos<br>
+#问题docker	ps，发现centos停止了<br>
+#常见的坑，docker容器使用后台运行，就必须要有一个前台进程，docker发现没有应用，就会自动停止<br>
+#nginx，容器启动后，发现自己没有提供服务，就会立即停止，就没有程序了<br>
+查看日志<br>
+docker	logs -f -t容器	#没有日志<br>
+#自己编写一段shell脚本<br>
+[root@localhost ~]# docker run -d centos /bin/sh -c &quot;while true;do echo zhaoke;sleep 1;done&quot;<br>
+#显示日志<br>
+-tf				#显示日志<br>
+--tail number		#显示日志的条数<br>
+[root@localhost ~]# docker logs -t -f --tail 10 65f64c8eaa95<br>
+查看容器中的进程信息ps<br>
+top命令		#docker	top	容器id<br>
+[root@localhost ~]# docker top 65f64c8eaa95<br>
+UID                 PID                 PPID                C                   STIME               TTY                 TIME                CMD<br>
+root                13324               13307               0                   19:48               ?                   00:00:01            /bin/sh -c while true;do echo zhaoke;sleep 1;done<br>
+查看镜像的元数据<br>
+#命令<br>
+docker	inspect	容器id<br>
+进入当前正在运行的容器<br>
+#我们通常使用容器都是后台方式运行的，需要进入容器，修改一些配置<br>
+#命令<br>
+方式一:docker	exec  -it	容器id  /bin/bash   #进入容器开启一个新的终端，可以再里面操作<br>
+方式二:docker	attach	容器id					 #进入容器正在执行的终端，不会启动新的进程<br>
+从容器内拷贝文件<br>
+docker	cp	容器id:容器内路径	 目的的主机路径<br>
+#可以将容器内的文件传输到主机上<br>
+将镜像导出<br>
+docker	save  -o  镜像名.tar.gz  镜像名:版本号<br>
+镜像导入<br>
+docker  load  &lt;  镜像名.tar.gz<br>
+1.1.7 命令小结</p>
+<p>第2章 部署服务<br>
+2.1.1 部署Nginx<br>
+docker search nginx	#先搜索nginx镜像	可以看到帮助文档<br>
+docker pull	nginx	#下载nginx<br>
+#运行测试<br>
+[root@ansible ~]# docker run -d --name nginx01 -p 3344:80 nginx<br>
+b95261d58d6475885235b7e23033aea2399c7086a8cfb85396faaa37bff76772<br>
+#-d	后台运行	#--name	给容器命名	  #-p 宿主机端口:容器内部端口<br>
+[root@ansible ~]# curl localhost:3344		#curl一下看看启动成功了没<br>
+端口暴露</p>
+<p>2.1.2 部署tomcat<br>
+#官方的使用<br>
+docker  run  -it  --rm  tomcat:9.0<br>
+#之前的启动都是后台，停止了容器之后，容器还是可以查到 docker run  -it  --rm，一般用来测试，用完删除</p>
+<p>#下载tomcat<br>
+docker  pull  tomcat<br>
+#启动运行<br>
+docker  run  -d  -p 3355:8080  --name  tomcat01  tomcat<br>
+#测试访问没有问题<br>
+[root@ansible ~]# docker run -d -p 3355:8080 --name tomcat01 tomcat<br>
+492a0a69089a6a80dccc326b5648e832b9787d5a390d62a9f7127a9aa370e905<br>
+[root@ansible ~]# docker exec -it tomcat01 /bin/bash<br>
+#发现问题，1、linux命令变少；2、没有webapps。是因为阿里云镜像的原因，默认是最小镜像，所以不必要的都剔除掉，保证最小可运行的环境<br>
+#进入tomcat中将webapps.dist/*中的东西全部放进webapps中就跟正常安装的一样了<br>
+思考问题：如果以后部署项目，如果每次都要进入容器会十分麻烦，可以在容器外部提供一个映射路径，webapps，我们在外部翻翻杂志项目，就自动同步到内部就好了！<br>
+2.1.3 部署es+kibana<br>
+#es	暴露的端口很多<br>
+#es 特别的耗内存<br>
+#es 的数据一般需要防止到安全目录！挂载</p>
+<h1 id="-net-somenetwork-网络配置">--net  somenetwork ?  网络配置</h1>
+<p>#启动elasticsearch	<br>
+docker run -d --name elasticsearch --net somenetwork -p 9200:9200 -p 9300:9300 -e &quot;discovery.type=single-node&quot; elasticsearch:7.6.2<br>
+#启动之后，linux会变卡顿	<br>
+docker  stats  查看cpu的状态<br>
+#测试es是否成功<br>
+#关闭es，增加对他的内存限制，修改配置文件 -e 环境配置修改<br>
+docker run -d --name elasticsearch04 -p 9200:9200 -p 9300:9300 -e &quot;discovery.type=single-node&quot; -e ES_JAVA_OPTS=&quot;-Xms64m -Xmx512m&quot; elasticsearch:7.6.2<br>
+作业：使用kibana连接es？思考网络如何才能连接过去</p>
+<p>2.1.4 部署可视化<br>
+portainer		#刚开始先用这个<br>
+Rancher			#CI/CD再用</p>
+<p>什么是portainer?<br>
+Docker图形化界面管理工具！提供一个后台面板供我们操作！<br>
+#安装命令<br>
+docker  run  -d  -p  8088:9000 <br>
+--restart=always -v /var/run/docker.sock:/var/run/docker.sock --privileged=true portainer/portainer<br>
+#方式，-v 挂载  最后授权</p>
+<p>#访问测试  IP地址:端口号<br>
+#设置一个密码</p>
+<p>#选择本地</p>
+<p>#进入成功</p>
+<p>一般平时不会使用，玩玩就行<br>
+第3章 Docker镜像讲解<br>
+3.1.1 镜像是什么<br>
+镜像是一种轻量级、可执行的独立软件包，用来打包软件运行环境和基于运行开发的软件，它包含运行某个软件所需的所有内容，包括代码、运行时、库、环境变量和配置文件。<br>
+如何得到镜像<br>
+1、	远程仓库下载<br>
+2、	同事拷贝<br>
+3、	自己制作<br>
+3.1.2 Docker镜像加载原理<br>
+UnionFS（联合文件系统）<br>
+UnionFS（联合文件系统）：UnionFS是一种分层、轻量级并且高性能的文件系统，它支持对文件系统的修改作为一次提交来一层层的叠加，同时可以将不同目录挂载到同一个虚拟文件系统下。Union文件系统是Docker镜像的基础。镜像可以通过分层来进行继承，基于基础镜像（没有父镜像），可以制作各种具体的应用镜像。</p>
+<p>特性：一次同时加载多个文件系统，但从外面看起来只能看到一个文件系统，联合加载会把各层文件系统叠加起来，这样最终的文件系统会包含所有底层的文件和目录</p>
+<p>Docker镜像加载原理<br>
+docker的镜像实际上由一层一层的文件系统组成，这种层级的文件系统UnionFS。</p>
+<p>bootfs（boot file system）主要包含bootloader和kernel，bootloader主要是引导加载kernel，linux刚启动是会加载bootfs文件系统,在Docker镜像的最底层是boots。这是一层与我们典型的linux/Unix系统是一样的，包含boot加速器和内核。当boot加载完成之后整个内核都在内存中了，此时内存的使用权已有bootfs转交给内核，此时系统也会卸载bootfs。</p>
+<p>roottfs（boot file system），在bootfs之上。包含的就是典型Linux系统中的/dev，/proc，/bin，/etc等标准目录和文件。rootfs就是各种不同的操作系统发行版，比如Ubuntu，Centos等等。</p>
+<p>平时我们安装虚拟机的Centos都是还几个G，为什么Docker这里才200M</p>
+<p>对于一个精简的OS，rootfs可以很小，只需要包含最基本的命令，工具和持续库就可以了，因为底层直接用Host的kernel，自己只需要提供rootfs就可以了，由此可见对于不同的Linux发行版，bootfs基本是一致的，rootfs会有差别，因此不同的发行版可以公用bootfs。<br>
+虚拟机时分钟级别，容器是秒级<br>
+分层理解<br>
+分层的镜像<br>
+我们可以下载一个镜像，主已观察下载的日志输入，可以看到是一层一层的在下载！</p>
+<p>思考，为什么Docker镜像要采用这种分层的结构呢？<br>
+最大的好处，就是资源共享了！比如有多个镜像都从相同的Base镜像构建而来，那么宿主机只需要在磁盘上保留一份Base镜像，同时内存中也只需要加载一份base镜像，这样就可以为所有的容器服务了，而且镜像的每一层都可以被共享。</p>
+<p>查看镜像分层的方式可以通过docker	inage	inspect命令！<br>
+[root@ansible ~]# docker image inspect redis:latest<br>
+3.1.3 理解<br>
+所有的Docker镜像都期时与一个基础镜像层，当进行修改或增加新的内容时，就会在当前镜像层之上，创建新的镜像层。<br>
+举个简单的例子，假如基于Ubuntu Linux 16.04 创建一个新的镜像，这就是新镜像的第一层；如果在该镜像中添加python包，就会在基础镜像层之上创建第二个镜像层；如果继续添加一个安全补丁，就会创建第三个镜像层。<br>
+该镜像当前已经包含了3个镜像层，如下图所示（这只是用于演示的很简单的例子）。</p>
+<p>添加额外的镜像层的同时，镜像始终保持时点给钱所有镜像的组合，理解这一点非常重要。下图中举了一个简单的列子，每个镜像层包含三个文件，而镜像包含了来自两个镜像层的6个文件。</p>
+<p>上图中的镜像层跟之前图中的略有区别，主要目的时便于展示文件。<br>
+下图中展示了一个稍微复杂的三层镜像，在外部看来整个镜像只有6个文件，这是因为最上层中的文件7是文件5的一个更新版。</p>
+<p>这种情况下，上层镜像层中的文件覆盖了底层镜像层中的文件，这样使得文件的更新版本作为一个新景象层添加到镜像当中。Docker通过储存引擎（新版本采用快照机制）的方式来实现镜像层<br>
+堆栈，并保证多镜像层对外展示为统一的文件系统。Linux上可用的储存引擎有AUF5、Overlay2、DeviceMapper、Btrfs以及ZFS，顾名思义，每种储存引擎都是基于Linux中对应的文件系统或者块设备技术，并且每种储存引擎都有其独有的性能特点。<br>
+Docekr在Windows上仅支持windowsfilter一种储存引擎，该引擎基于NFS文件系统之上实现了分层和cow。<br>
+下图展示了与系统显示相同的三层镜像，所有镜像层堆镜并合并，对外提供统一的视图。</p>
+<p>特点<br>
+Docker镜像都是只读的，当容器启动时，一个新的可用层被加载到镜像的顶部！这一层就是我们通常说的容器层，容器之下的都叫镜像层！</p>
+<p>3.1.4 commit镜像<br>
+docker  commit  #提交容器成为一个新的副本<br>
+#命令和git原理类似<br>
+docker  commit  -m=“提交的描述信息” -a=“作者” 容器ID  目标镜像名:[TAG]<br>
+实战测试<br>
+#启动一个默认的tomcat<br>
+#并将webapps.dist/*复制到webapps中<br>
+#将修改后的容器通过commit提交为一个镜像！以后就可以使用修改过的镜像就可以，这就是我们自己的一个修改过的镜像<br>
+[root@ansible ~]# docker commit -a=&quot;zhaoke&quot; -m=&quot;add webapps app&quot; 9f85f0e8b502 tomcat02:1.0</p>
+<p>学习方式说明:理解概念，但是一定要实践，最后实践和理论相结合一次搞定这个知识</p>
+<p>如果你想要保存当前容器的状态，就可以通过commit来提交，获得一个镜像，就好比我们以前学习的VM时候，快照！<br>
+到这里才算是入门Docker！<br>
+第4章 容器数据卷<br>
+4.1.1 什么是容器数据卷<br>
+docker的理念回顾<br>
+将应用和环境打包成一个镜像！<br>
+如果数据都在容器中，那么我们容易删除，数据就会丢失！ #需求：数据可以持久化<br>
+MySQL，容器删了，删库跑路！  							#需求：MySQL数据可以储存在本地<br>
+容器之间可以有一个数据共享的技术！docker容器中产生的数据，同步到本地！<br>
+这就是卷技术，目录的挂载，将我们容器内的目录挂载到Linux上面</p>
+<p>总结一句话：容器的持久化和同步操作！容器间也可以是数据共享的！</p>
+<p>4.1.2 使用数据卷<br>
+方式一：直接使用命令来挂载  -v<br>
+docker  run  -it  -v   主机目录:容器内目录</p>
+<p>#测试<br>
+[root@ansible ~]# docker run --name centos01 -it -v /home/lianxi:/home centos /bin/bash<br>
+#启动起来是我们可以通过docker  inspect  容器名称</p>
+<p>#测试数据同步<br>
+1、	停止容器<br>
+2、	宿主机上修改文件<br>
+3、	启动容器<br>
+4、	容器内的数据依旧是同步的</p>
+<p>好处:我们以后修改只需要在本地修改即可，容器内会自动同步！<br>
+4.1.3 实战安装MySQL<br>
+思考：MySQL的数据持久化问题<br>
+#获取镜像<br>
+[root@ansible ~]# docker pull mysql:5.7</p>
+<p>#运行容器，需要数据挂载！  #安装启动mysql，需要配置密码的，这是要注意点!<br>
+#官方测试，docker  run  --name some-mysql  -e  MYSQL_ROOT_PASSWORD=my-secret-pw  -d  mysql:tag</p>
+<p>#启动自己的<br>
+-d  后台运行<br>
+-p  端口映射<br>
+-v  卷挂载<br>
+-e  环境配置<br>
+--name   容器名字<br>
+[root@ansible ~]# docker run -d -p 3310:3305 --name=mysql01 -v /home/mysql/conf:/etc/mysql/conf.d -v /home/mysql/data:/var/lib/mysql -e MYSQL_ROOT_PASSWORD=123123 mysql:5.7</p>
+<p>#启动成功之后，我们在本地使用sqlyong连接测试一下</p>
+<p>4.1.4 具名和匿名挂载<br>
+#匿名挂载<br>
+-v	容器内路径！<br>
+[root@ansible ~]#docker run -d -P --name nginx02 -v /ect/nginx nginx</p>
+<p>#查看所有的volume的情况<br>
+[root@ansible ~]# docker volume ls<br>
+DRIVER    VOLUME NAME<br>
+local     4d135f25544b7002ab28f6c89f553cf27b13de14a67e2c5edfdd7c6b72af3b76<br>
+local     55aa9e0eaa1aba71435e8aafd4efa83c223424248a48948046740b8436f33f49</p>
+<p>#这里发现，这种就是匿名挂载，我们在  -v  只写了容器内的路径，没有写容器外的路径！</p>
+<p>#具名挂载<br>
+[root@ansible ~]# docker run  -d -P --name nginx03 -v juming-nginx:/etc/nginx nginx<br>
+8ceb39592038172a5c874bf8b6336257d525df88a735d4cbb51d6980ecd3d38f<br>
+[root@ansible ~]# docker volume ls<br>
+DRIVER    VOLUME NAME<br>
+local     4d135f25544b7002ab28f6c89f553cf27b13de14a67e2c5edfdd7c6b72af3b76<br>
+local     55aa9e0eaa1aba71435e8aafd4efa83c223424248a48948046740b8436f33f49<br>
+local     juming-nginx</p>
+<p>#通过  -v  卷名：容器内路径<br>
+#查看一下这个卷<br>
+[root@ansible ~]# docker volume inspect juming-nginx</p>
+<p>所有的docker容器内的卷，没有指定目录的情况下一般都是在/var/lib/docker/volumes/下<br>
+我们通过具名挂载就可以方便的找到我们的一个卷，大多数情况在使用的是具名挂载<br>
+#如何确定是具名挂载还是匿名挂载，还是指定路径挂载<br>
+-v  容器内路径			#匿名挂载<br>
+-v	卷名：容器内路径	#具名挂载<br>
+-v	/宿主机路径：容器内路径		#指定路径挂载<br>
+拓展<br>
+#通过 -v 容器内路径，ro    rw  改变读写权限<br>
+ro   readonly		#只读<br>
+rw	 readwrite		#可读可写</p>
+<p>#一旦这个设置了容器权限，容器对我们挂载出来的容器就有限定了！<br>
+[root@ansible _data]# docker run -d -P --name nginx04 -v junming-nginx:/etc/nginx:ro nginx<br>
+[root@ansible _data]# docker run -d -P --name nginx04 -v junming-nginx:/etc/nginx:rw nginx<br>
+#ro		只要看到ro就说明这个路径只能通过宿主机来操作，容器内部是无法操作</p>
+<p>4.1.5 初识Dockerfile<br>
+Dockerfile就是用来构建docker镜像的构建文件！命令脚本，先试一下<br>
+通过这个脚本可以生成镜像，镜像是一层一层的，脚本一个一个的命令，每个命令都是一层！<br>
+#测试<br>
+#创建一个dockerfile文件，名字可以随机，建议Dockerfile<br>
+#文件中的内容	指令（大写）	参数<br>
+[root@ansible docker-test-volume]# cat dockerfile1<br>
+FROM centos</p>
+<p>VOLUME [&quot;volume01&quot;,&quot;volume02&quot;]</p>
+<p>CMD echo &quot;----end----&quot;<br>
+CMD /bin/bash</p>
+<p>#这里的每个命令就是镜像的一层</p>
+<p>#启动自己的容器</p>
+<p>这个卷和外部一定有一个同步的目录！</p>
+<p>查看一下挂载的路径</p>
+<p>测试一下刚才的文件是否同步出去了！<br>
+这种方式我们未来使用的十分多，因为我们通常会构建自己的镜像！<br>
+假设构建镜像时没有挂载卷，要手动镜像挂载  -v 卷名：容器内路径！</p>
+<p>4.1.6 数据卷容器<br>
+多个MySQL同步数据！</p>
+<p>启动三个容器，通过我们刚才自己写的镜像启动的</p>
+<p>#测试，可以删除docker01，查看一下docker02和docker03是否还可以访问这个文件<br>
+#测试依旧可以访问</p>
+<p>多个MySQL实现数据共享<br>
+[root@c6635dd740f5 volume01]# docker run -d -p 3310:3306 -v /etc/mysql/cinf.d -v /var/lib/mysql -e MYSQL_ROOT_PASSWORD=123123 --name mysql01 mysql:5.7<br>
+[root@c6635dd740f5 volume01]# docker run -d -p 3310:3306 -e MYSQL_ROOT_PASSWORD=123123 --name mysql02 –volumes-from mysql01 mysql:5.7</p>
+<p>#这个时候，可以实现两个容器数据同步！</p>
+<p>结论：<br>
+容器之间配置信息的传递，数据卷容器的生命周期一致持续到没有容器使用为止。<br>
+但是一旦你持久化到了本地，这个时候，本地的数据是不会删除的！<br>
+第5章 Dockerfile<br>
+5.1.1 Dockerfile介绍<br>
+dockerfile是用来构建docker镜像的文件！命令参数脚本<br>
+构建步骤<br>
+1、	编写一个docker file文件<br>
+2、	docker	build构建成为一个镜像<br>
+3、	docker	run运行镜像<br>
+4、	docker	push发布镜像（DockrHub、阿里云镜像仓库！）<br>
+查看一下官方是怎么做的</p>
+<p>很多官方镜像都是基础包，很多功能都没有，我们通常会自己搭建自己的镜像<br>
+官方既然可以搭建镜像，我们自己也没问题<br>
+5.1.2 Dockerfile构建过程<br>
+基础知识：<br>
+1、	每个保留关键字（指令）都是必须是大写字母<br>
+2、	指令是从上到下顺序执行<br>
+3、	#	表示注释<br>
+4、	每一个指令都会创建提交！</p>
+<p>dockerfile是面向开发的，我们以后要发布项目，做镜像，就需要编写dockerfile文件，这个文件十分简单<br>
+docker镜像逐渐成为企业交付的标准，必须掌握！<br>
+步骤：开发，部署，运维。。。缺一不可！<br>
+DockerFile构建文件，定义了一切的步骤，源代码<br>
+DockerImages：通过DockerFile构建生成的镜像，最终发布和运行的产品。<br>
+Docker容器：容器就是镜像运行起来提供服务器</p>
+<p>5.1.3 docker的指令<br>
+之前都是使用其他人的，现在知道了这些指令后，自己练习制作一个镜像<br>
+FROM				#基础镜像，一切从这里开始构建centos<br>
+MAINTAINER			#镜像是谁写的，姓名+邮箱<br>
+RUN					#镜像构建的时候需要运行的命令<br>
+ADD					#步骤，tomcat镜像，这个tomcat压缩包！添加内容<br>
+WORKDIR				#镜像的工作目录<br>
+VOLUME				#设计一个容器卷，就是挂载的目录位置<br>
+EXPOSE				#暴露端口配置<br>
+CMD					#指定这个容器启动的时候要运行的命令，只有一个会生效，可被替代<br>
+ENTRYPOINT			#指定这个容器启动的时候要运行的命令，可以追加命令<br>
+ONBUILD				#当构建一个被继承Dockerfile这个时候就会运行ONBUILD的指令，触发指令<br>
+COPY				#类似ADD，将我们文件拷贝到镜像中<br>
+ENV					#构建的时候设置环境变量！</p>
+<p>5.1.4 实战测试<br>
+Docker  Hub中99%镜像都是从这个基础镜像过来的FROM scratch,然后配置需要的软件和配置来进行的创建</p>
+<p>创建一个自己的centos<br>
+#第一步，编写Dockerfile的文件</p>
+<p>#第二步，通过这个文件构建镜像<br>
+命令 docker  build  -f  dockerfile文件路径  -t  镜像名：[tag]<br>
+Successfully built bd95efb41428<br>
+Successfully tagged mycentos:0.1<br>
+#3、测试运行<br>
+对比之前的centos</p>
+<p>增加之后的镜像</p>
+<p>可以列出本地镜像的变更历史</p>
+<p>这样平时拿到一个镜像，可以研究一下它是怎么做的了<br>
+5.1.5 CMD和CNTRYPOINT的区别<br>
+CMD			#指定这个容器启动的时候要运行的命令，只有最后一个会生效，可被替代<br>
+ENTRYPOINT	#指定这个容器启动的时候要运行的命令，可以追加命令</p>
+<p>测试CMD<br>
+#编写dockerfile文件<br>
+[root@ansible dockerfile]# vim docker-cmd-test<br>
+FROM centos<br>
+CMD [&quot;ls&quot;,&quot;-a&quot;]<br>
+#构建镜像<br>
+[root@ansible dockerfile]# docker build -f docker-cmd-test -t cmdtest .<br>
+#run运行，发现ls  -a命令生效<br>
+[root@ansible dockerfile]# docker run a152bde80c10<br>
+.<br>
+..<br>
+.dockerenv<br>
+bin<br>
+dev<br>
+etc<br>
+home<br>
+lib<br>
+lib64<br>
+#想追加一个命令  -l   ls  -al<br>
+[root@ansible dockerfile]# docker run a152bde80c10 -l<br>
+docker: Error response from daemon: OCI runtime create failed: container_linux.go:370: starting container process caused: exec: &quot;-l&quot;: executable file not found in $PATH: unknown.<br>
+#CMD的情况下 -l  替换了CMD  [“ls”,”-a”]命令，-l不是命令所以报错。CMD会把之前的命令替换掉<br>
+测试ENTRYPOINT<br>
+#编写dockerfile文件<br>
+[root@ansible dockerfile]# vim docker-cmd-entrypoin<br>
+FROM centos<br>
+ENTRYPOINT [&quot;ls&quot;,&quot;-a&quot;]<br>
+#构建镜像<br>
+[root@ansible dockerfile]# docker build -f docker-cmd-entrypoin -t entrypoint-test .<br>
+#追加一个命令发现，是直接追加在ENTRYPOINT命令后面<br>
+[root@ansible dockerfile]# docker run e10772e30b78 -l<br>
+total 0<br>
+drwxr-xr-x   1 root root   6 Dec 16 03:18 .<br>
+drwxr-xr-x   1 root root   6 Dec 16 03:18 ..<br>
+-rwxr-xr-x   1 root root   0 Dec 16 03:18 .dockerenv<br>
+lrwxrwxrwx   1 root root   7 Nov  3 15:22 bin -&gt; usr/bin<br>
+drwxr-xr-x   5 root root 340 Dec 16 03:18 dev<br>
+drwxr-xr-x   1 root root  66 Dec 16 03:18 etc<br>
+drwxr-xr-x   2 root root   6 Nov  3 15:22 home<br>
+Dockerfile中很多命令都十分相似，我们需要了解他们的区别，我们最好的学习就是对比他们然后测试效果！<br>
+5.1.6 实战：tomcat镜像<br>
+1、	准备镜像文件tomcat压缩包，jdk的压缩包！</p>
+<p>2、	编写dockerfile文件，官方命名dockerfile，build会自动寻找这个文件，就不需要-f指定了<br>
+[root@ansible tomcat]# cat Dockerfile<br>
+FROM centos<br>
+MAINTAINER andi<a href="mailto:andidechuan@163.com">andidechuan@163.com</a></p>
+<p>COPY readme.txt /usr/local/readme.txt</p>
+<p>ADD jdk-8u60-linux-x64.tar.gz /usr/local/<br>
+ADD apache-tomcat-9.0.41.tar.gz /usr/local/</p>
+<p>RUN yum -y install vim</p>
+<p>ENV MYPATH /usr/local<br>
+WORKDIR $MYPATH</p>
+<p>ENV JAVA_HOME /usr/local/jdk1.8.0_60<br>
+ENV CLASSPATH <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>J</mi><mi>A</mi><mi>V</mi><msub><mi>A</mi><mi>H</mi></msub><mi>O</mi><mi>M</mi><mi>E</mi><mi mathvariant="normal">/</mi><mi>l</mi><mi>i</mi><mi>b</mi><mi mathvariant="normal">/</mi><mi>d</mi><mi>t</mi><mi mathvariant="normal">.</mi><mi>j</mi><mi>a</mi><mi>r</mi><mo>:</mo></mrow><annotation encoding="application/x-tex">JAVA_HOME/lib/dt.jar:</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathdefault" style="margin-right:0.09618em;">J</span><span class="mord mathdefault">A</span><span class="mord mathdefault" style="margin-right:0.22222em;">V</span><span class="mord"><span class="mord mathdefault">A</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.32833099999999993em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathdefault mtight" style="margin-right:0.08125em;">H</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mord mathdefault" style="margin-right:0.02778em;">O</span><span class="mord mathdefault" style="margin-right:0.10903em;">M</span><span class="mord mathdefault" style="margin-right:0.05764em;">E</span><span class="mord">/</span><span class="mord mathdefault" style="margin-right:0.01968em;">l</span><span class="mord mathdefault">i</span><span class="mord mathdefault">b</span><span class="mord">/</span><span class="mord mathdefault">d</span><span class="mord mathdefault">t</span><span class="mord">.</span><span class="mord mathdefault" style="margin-right:0.05724em;">j</span><span class="mord mathdefault">a</span><span class="mord mathdefault" style="margin-right:0.02778em;">r</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">:</span></span></span></span>JAVA_HOME/lib/tools.jar<br>
+ENV CATALINA_HOME /usr/local/apache-tomcat-9.0.41<br>
+ENV CATALINA_BASH /usr/local/apache-tomcat-9.0.41<br>
+ENV PATH <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>P</mi><mi>A</mi><mi>T</mi><mi>H</mi><mo>:</mo></mrow><annotation encoding="application/x-tex">PATH:</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathdefault" style="margin-right:0.13889em;">P</span><span class="mord mathdefault">A</span><span class="mord mathdefault" style="margin-right:0.13889em;">T</span><span class="mord mathdefault" style="margin-right:0.08125em;">H</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">:</span></span></span></span>JAVA_HOME/bin:<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>C</mi><mi>A</mi><mi>T</mi><mi>A</mi><mi>L</mi><mi>I</mi><mi>N</mi><msub><mi>A</mi><mi>H</mi></msub><mi>O</mi><mi>M</mi><mi>E</mi><mi mathvariant="normal">/</mi><mi>l</mi><mi>i</mi><mi>b</mi><mo>:</mo></mrow><annotation encoding="application/x-tex">CATALINA_HOME/lib:</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathdefault" style="margin-right:0.07153em;">C</span><span class="mord mathdefault">A</span><span class="mord mathdefault" style="margin-right:0.13889em;">T</span><span class="mord mathdefault">A</span><span class="mord mathdefault">L</span><span class="mord mathdefault" style="margin-right:0.07847em;">I</span><span class="mord mathdefault" style="margin-right:0.10903em;">N</span><span class="mord"><span class="mord mathdefault">A</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.32833099999999993em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathdefault mtight" style="margin-right:0.08125em;">H</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mord mathdefault" style="margin-right:0.02778em;">O</span><span class="mord mathdefault" style="margin-right:0.10903em;">M</span><span class="mord mathdefault" style="margin-right:0.05764em;">E</span><span class="mord">/</span><span class="mord mathdefault" style="margin-right:0.01968em;">l</span><span class="mord mathdefault">i</span><span class="mord mathdefault">b</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">:</span></span></span></span>CATALINA_HOME/bin</p>
+<p>EXPOSE 8080</p>
+<p>CMD /usr/local/apache-tomcat-9.0.41/bin/startup.sh &amp;&amp; tail -F /url/local/apache-tomcat-9.0.41/bin/logs/catalina.out<br>
+3、	构建镜像<br>
+#docker build -t zktomcat .<br>
+4、	启动镜像<br>
+5、	访问测试<br>
+6、	发布项目（由于做了卷挂载，我们直接在本地编写项目就可以发布了！）</p>
+<?xml version="1.0" encoding="UTF-8"?>
+<p><web-app xmlns="http://java.sun.com/xml/ns/javaee"
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
+                               http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+           version="2.5"></p>
+  </web-app>
+jsp
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>hello 赵科</title>
+</head>
+<body>
+Hello World!<br/>
+<%
+System.out.println(“----my test web logs----”);
+%>
+</body>
+</html>
+发现：项目部署成功，可以直接访问ok！
+<p>以后的开发步骤：需要掌握Dockerfile的编写！我们之后的一切都是使用docker镜像来发布运行！</p>
+<p>5.1.7 发布自己的镜像<br>
+Dockerhub<br>
+1、	地址https://hub.docker.com/注册自己的账号<br>
+2、	确定这个账号可以登录<br>
+3、	在服务器上提交自己的镜像<br>
+docker  login  -u 用户名  -p 密码<br>
+[root@ansible tomcat]# docker login -u 18730935776<br>
+Password:<br>
+WARNING! Your password will be stored unencrypted in /root/.docker/config.json.<br>
+Configure a credential helper to remove this warning. See<br>
+https://docs.docker.com/engine/reference/commandline/login/#credentials-store</p>
+<p>Login Succeeded<br>
+4、	登录完毕后就可以提交镜像了，就是一步docker  push<br>
+#push镜像的问题<br>
+[root@ansible tomcat]# docker push andi/zktomcat:0.1<br>
+The push refers to repository [docker.io/andi/zktomcat]<br>
+An image does not exist locally with the tag: andi/zktomcat<br>
+#解决，添一个tag<br>
+[root@ansible tomcat]# docker tag bd8499565efd 18730935776[必须要和自己的hub账号一样]/tomcat:1.0<br>
+#上传过程中发现一直连接超时，因为Hub网站是外网，所以在/etc/resolv.conf中添加一个8.8.8.8就可以了<br>
+Get https://registry-1.docker.io/v2/: dial tcp: lookup registry-1.docker.io on 8.8.8.8:53: read udp 192.168.2.101:40422-&gt;8.8.8.8:53: i/o timeout<br>
+#docker push上去即可！发布镜像时尽量带上版本号<br>
+[root@ansible ~]# docker push 18730935776/zktomcat:1.0</p>
+<p>提交的时候也是按照镜像的层级来进行提交的！<br>
+5.1.8 发布到阿里云镜像上<br>
+1、	登录到阿里云<br>
+2、	找到容器镜像服务<br>
+3、	创建命名空间</p>
+<p>4、	创建容器镜像</p>
+<p>5、	浏览</p>
+<p>阿里云容器上传参考官方文档就可以	<br>
+5.1.9 小结</p>
+<p>第6章 docker网络<br>
+6.1.1 理解docker0<br>
+第一步清空所有环境<br>
+测试</p>
+<p>三个网络<br>
+#问题，docker是如何处理容器网络访问的？</p>
+<p>#运行一个容器<br>
+[root@localhost ~]# docker run -d -P --name tomcat01 tomcat<br>
+#查看容器的内部网络地址 ip addr，发现容器启动的时候<br>
+[root@localhost ~]# docker exec -it tomcat01 ip addr<br>
+1: lo: &lt;LOOPBACK,UP,LOWER_UP&gt; mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000<br>
+link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00<br>
+inet 127.0.0.1/8 scope host lo<br>
+valid_lft forever preferred_lft forever<br>
+6: eth0@if7: &lt;BROADCAST,MULTICAST,UP,LOWER_UP&gt; mtu 1500 qdisc noqueue state UP group default<br>
+link/ether 02:42:ac:11:00:02 brd ff:ff:ff:ff:ff:ff link-netnsid 0<br>
+inet 172.17.0.2/16 brd 172.17.255.255 scope global eth0<br>
+valid_lft forever preferred_lft forever</p>
+<p>#通过ping命令查看linux能否联通容器内部<br>
+[root@localhost ~]# ping 172.17.0.2<br>
+PING 172.17.0.2 (172.17.0.2) 56(84) bytes of data.<br>
+64 bytes from 172.17.0.2: icmp_seq=1 ttl=64 time=0.447 ms<br>
+64 bytes from 172.17.0.2: icmp_seq=2 ttl=64 time=0.060 ms<br>
+原理<br>
+1、	我们每启动一个docker容器，docker就会给docker容器分配一个ip，我们只要安装了docker，就会有一个网卡docker0桥接模式，使用的技术是vethc -pair技术！<br>
+再次测试ip addr</p>
+<p>2、在启动了一个容器测试时，发现又多了一对网卡</p>
+<p>#我们发现这个容器带来网卡，都是一对对的</p>
+<h1 id="vethc-pair就是一堆的虚拟设备接口他们都是成对出现的一端连着协议一端彼此相连">vethc -pair就是一堆的虚拟设备接口，他们都是成对出现的，一端连着协议，一端彼此相连</h1>
+<p>#正因为有这个特性，vethc-pair充当一个桥梁，连接各州虚拟网络设备的<br>
+#OpenStac，Docker容器之间的连接，ovs的连接，都是使用vethc -pair技术<br>
+3、测试tomcat01和tomcat02是否可以ping通！<br>
+[root@localhost ~]# docker exec -it tomcat02 ping 172.17.0.2<br>
+#结论，容器和容器之间是可以互相ping通的！<br>
+如图一个网络模型图：</p>
+<p>结论：tomcat01和tomcat02是公用的一个路由器，docker0.<br>
+所有的容器不指定网络的情况下，都是docker0路由的，docker会给我们的容器分配一个默认的可用ip<br>
+小结<br>
+Docker使用的是Liunx 的桥接</p>
+<p>Docker中的所有网络接口都是虚拟的，虚拟的转发效率更高（内网传递文件！）<br>
+只要容器删除，对应网桥一对就没了！</p>
+<p>6.1.2 –link<br>
+思考一个场景，我们编写了一个微服务，database url=ip，项目不重启，数据库ip换掉了，我们希望可以梳理这个问题，可以用名字来进行访问容器？<br>
+[root@zhaoke ~]# docker exec -it tomcat02 ping tomcat01<br>
+ping: tomcat01: Name or service not known<br>
+#直接使用ping命令无法ping通，如何可以解决<br>
+#通过—link既可以解决了网络连通问题<br>
+[root@zhaoke ~]# docker run -d -P --name tomcat03 --link tomcat02 tomcat<br>
+[root@zhaoke ~]# docker exec -it tomcat03 ping tomcat02<br>
+PING tomcat02 (172.17.0.3) 56(84) bytes of data.<br>
+64 bytes from tomcat02 (172.17.0.3): icmp_seq=1 ttl=64 time=0.110 ms<br>
+64 bytes from tomcat02 (172.17.0.3): icmp_seq=2 ttl=64 time=0.130 ms<br>
+#反向无法ping通<br>
+[root@zhaoke ~]# docker exec -it tomcat02 ping tomcat03<br>
+ping: tomcat03: Name or service not known<br>
+探究：inspect</p>
+<p>其实这个tomcat03就是在本地配置了tomcat02的地址<br>
+#查看hosts配置，在这里原理发现<br>
+[root@zhaoke ~]# docker exec -it tomcat03 cat /etc/hosts<br>
+127.0.0.1	localhost<br>
+::1	localhost ip6-localhost ip6-loopback<br>
+fe00::0	ip6-localnet<br>
+ff00::0	ip6-mcastprefix<br>
+ff02::1	ip6-allnodes<br>
+ff02::2	ip6-allrouters<br>
+172.17.0.3	tomcat02 ec420d642219<br>
+172.17.0.4	c97b9380df41<br>
+本质探究：--link就是我们在hosts配置中增加了一个172.18.0.3 tomcat02 IP地址<br>
+我们现在使用Docker已经不建议使用—link了！<br>
+自定义网络！不适用docker0！<br>
+docker0问题：它不支持容器连接访问！<br>
+6.1.3 自定义网络</p>
+<p>Docker</p>
+<p>作者：赵科<br>
+归档：学习笔记<br>
+2020/8/30</p>
+<ol>
+<li>目录<br>
+第1章 常用命令	2<br>
+1.1.1 docker介绍	2<br>
+1.1.2 安装Docker	2<br>
+1.1.3 帮助命令	3<br>
+1.1.4 镜像命令	3<br>
+1.1.5 容器命令	4<br>
+1.1.6 常用其他命令	5<br>
+1.1.7 命令小结	6<br>
+第2章 部署服务	7<br>
+2.1.1 部署Nginx	7<br>
+2.1.2 部署tomcat	8<br>
+2.1.3 部署es+kibana	8<br>
+2.1.4 部署可视化	9<br>
+第3章 Docker镜像讲解	10<br>
+3.1.1 镜像是什么	10<br>
+3.1.2 Docker镜像加载原理	11<br>
+3.1.3 理解	12<br>
+3.1.4 commit镜像	14<br>
+第4章 容器数据卷	14<br>
+4.1.1 什么是容器数据卷	14<br>
+4.1.2 使用数据卷	15<br>
+4.1.3 实战安装MySQL	16<br>
+4.1.4 具名和匿名挂载	16<br>
+4.1.5 初识Dockerfile	18<br>
+4.1.6 数据卷容器	20<br>
+第5章 Dockerfile	22<br>
+5.1.1 Dockerfile介绍	22<br>
+5.1.2 Dockerfile构建过程	23<br>
+5.1.3 docker的指令	24<br>
+5.1.4 实战测试	24<br>
+5.1.5 CMD和CNTRYPOINT的区别	26<br>
+5.1.6 实战：tomcat镜像	28<br>
+5.1.7 发布自己的镜像	29<br>
+5.1.8 发布到阿里云镜像上	30</li>
+</ol>
+<p>第1章 常用命令<br>
+1.1.1 docker介绍<br>
+docker的三大核心组件	镜像	容器	仓库<br>
+镜像存放在仓库中，启动后变为容器<br>
+1.1.2 安装Docker<br>
+登录https://docs.docker.com/get-docker/选择版本进行下载<br>
+如果系统内已有Docker需要先进行卸载<br>
+yum remove docker <br>
+docker-client <br>
+docker-client-latest <br>
+docker-common <br>
+docker-latest <br>
+docker-latest-logrotate <br>
+docker-logrotate <br>
+docker-engine<br>
+安装需要的安装包<br>
+yum install -y yum-utils</p>
+<h1 id="设置镜像的仓库-2">设置镜像的仓库</h1>
+<p>yum-config-manager <br>
+--add-repo <br>
+https://download.docker.com/linux/centos/docker-ce.repo			#默认是国外的<br>
+yum-config-manager <br>
+--add-repo <br>
+https://m2uqq1c2.mirror.aliyuncs.com					  #建议用阿里云的<br>
+#更新yum软件包索引<br>
+yum	makecache  fast<br>
+#安装docker相关的内容		docker-ce	社区版	ee企业版<br>
+yum install docker-ce docker-ce-cli containerd.io<br>
+#启动docker<br>
+systemctl  start  docker<br>
+docker	version  #查看是否安装成功和版本信息<br>
+#测试hello-world<br>
+docker	run	hello-world<br>
+阿里云镜像加速<br>
+登录阿里云</p>
+<p>配置加速<br>
+sudo mkdir -p /etc/docker<br>
+sudo tee /etc/docker/daemon.json &lt;&lt;-'EOF'<br>
+{<br>
+&quot;registry-mirrors&quot;: [&quot;https://m2uqq1c2.mirror.aliyuncs.com&quot;]<br>
+}<br>
+EOF<br>
+sudo systemctl daemon-reload<br>
+sudo systemctl restart docker<br>
+成功！<br>
+1.1.3 帮助命令<br>
+docker	version		#docker的详细信息<br>
+docker	info			#显示docker的系统信息<br>
+docker	命令 –help	#帮助命令<br>
+1.1.4 镜像命令<br>
+docker images		#查看所有本地的主机上的镜像<br>
+[root@localhost ~]# docker images		#查看所有本地的主机上的镜像<br>
+REPOSITORY          TAG                 IMAGE ID            CREATED             SIZE</p>
+<p>#解释<br>
+REPOSITORY	镜像的仓库源<br>
+TAG			镜像的标签<br>
+IMAGE ID		镜像的ID<br>
+CREATED		镜像的创建时间<br>
+SIZE			镜像的大小<br>
+#可选项<br>
+-a, --all			列出所有镜像<br>
+-q, --quiet		只显示镜像ID</p>
+<p>docker	search	搜索镜像<br>
+docker	search	[镜像名称]<br>
+#可选项，通过收藏来过滤<br>
+--filter=STARS=3000		搜出来的镜像就是STARS大于3000的</p>
+<p>docker	pull		下载镜像<br>
+docker 	pull [镜像名称]<br>
+docker 	pull [镜像名称]:[版本号]</p>
+<p>1.1.5 容器命令<br>
+说明：我们有了镜像才可以创建容器，linux，下载一个centos镜像来测试<br>
+docker	pull	 centos<br>
+新建容器并启动<br>
+docker	run	 [可选参数] images<br>
+#参数说明<br>
+--name=”Name”		#容器名字	tomcat01	tomcat02,用来区分容器<br>
+-d					后台方式运行<br>
+-it					使用交互方式运行，进入容器产看内容<br>
+-p					指定容器的端口 -p	8080:8080		主机端口:容器端口<br>
+-P					随机指定端口<br>
+#测试	启动并进入容器<br>
+[root@localhost ~]# docker run -it centos /bin/bash<br>
+[root@8a1f989ad7da /]# ls		#查看容器内的centos，基础版本，很多命令都是不完善的！<br>
+bin  dev  etc  home  lib  lib64  lost+found  media  mnt  opt  proc  root  run  sbin  srv  sys  tmp  usr  var<br>
+[root@8a1f989ad7da /]# exit		#从容器中退回主机<br>
+exit<br>
+列出所有的运行的容器<br>
+#docker	ps	命令	<br>
+-a		#列出当先正在运行的容器，带出历史运行过的容器<br>
+-n=？	#显示最近创建的容器<br>
+-q		#只显示容器的编号<br>
+[root@localhost ~]# docker ps<br>
+CONTAINER ID        IMAGE               COMMAND             CREATED             STATUS              PORTS               NAMES<br>
+[root@localhost ~]# docker ps -a<br>
+CONTAINER ID        IMAGE               COMMAND             CREATED             STATUS                      PORTS               NAMES<br>
+8a1f989ad7da        centos              &quot;/bin/bash&quot;         29 minutes ago      Exited (0) 53 seconds ago                       kind_khorana<br>
+[root@localhost ~]# docker ps -aq<br>
+8a1f989ad7da<br>
+退出容器<br>
+exit		#直接停止并退出容器<br>
+crl + P + Q	#容器不停止退出<br>
+进入后台运行的容器<br>
+docker	exec  -it  容器名  /bin/bash<br>
+删除镜像<br>
+docker	rmi	-f	[镜像ID]					#删除镜像<br>
+docker	rmi	-f	$(docker  images  -aq)		#删除所有镜像<br>
+docker	ps	-a|xargs	docker	rm				#删除所有镜像<br>
+启动和停止容器<br>
+docker	start	  	容器id		#启动容器<br>
+docker	restart 	容器id		#重启容器<br>
+docker	stop		容器id		#停止当前正在运行的容器	<br>
+docker	kill		容器id		#强制停止当前容器<br>
+1.1.6 常用其他命令<br>
+后台启动容器<br>
+docker	run	-d	镜像名<br>
+[root@localhost ~]# docker run -d centos<br>
+#问题docker	ps，发现centos停止了<br>
+#常见的坑，docker容器使用后台运行，就必须要有一个前台进程，docker发现没有应用，就会自动停止<br>
+#nginx，容器启动后，发现自己没有提供服务，就会立即停止，就没有程序了<br>
+查看日志<br>
+docker	logs -f -t容器	#没有日志<br>
+#自己编写一段shell脚本<br>
+[root@localhost ~]# docker run -d centos /bin/sh -c &quot;while true;do echo zhaoke;sleep 1;done&quot;<br>
+#显示日志<br>
+-tf				#显示日志<br>
+--tail number		#显示日志的条数<br>
+[root@localhost ~]# docker logs -t -f --tail 10 65f64c8eaa95<br>
+查看容器中的进程信息ps<br>
+top命令		#docker	top	容器id<br>
+[root@localhost ~]# docker top 65f64c8eaa95<br>
+UID                 PID                 PPID                C                   STIME               TTY                 TIME                CMD<br>
+root                13324               13307               0                   19:48               ?                   00:00:01            /bin/sh -c while true;do echo zhaoke;sleep 1;done<br>
+查看镜像的元数据<br>
+#命令<br>
+docker	inspect	容器id<br>
+进入当前正在运行的容器<br>
+#我们通常使用容器都是后台方式运行的，需要进入容器，修改一些配置<br>
+#命令<br>
+方式一:docker	exec  -it	容器id  /bin/bash   #进入容器开启一个新的终端，可以再里面操作<br>
+方式二:docker	attach	容器id					 #进入容器正在执行的终端，不会启动新的进程<br>
+从容器内拷贝文件<br>
+docker	cp	容器id:容器内路径	 目的的主机路径<br>
+#可以将容器内的文件传输到主机上<br>
+将镜像导出<br>
+docker	save  -o  镜像名.tar.gz  镜像名:版本号<br>
+镜像导入<br>
+docker  load  &lt;  镜像名.tar.gz<br>
+1.1.7 命令小结</p>
+<p>第2章 部署服务<br>
+2.1.1 部署Nginx<br>
+docker search nginx	#先搜索nginx镜像	可以看到帮助文档<br>
+docker pull	nginx	#下载nginx<br>
+#运行测试<br>
+[root@ansible ~]# docker run -d --name nginx01 -p 3344:80 nginx<br>
+b95261d58d6475885235b7e23033aea2399c7086a8cfb85396faaa37bff76772<br>
+#-d	后台运行	#--name	给容器命名	  #-p 宿主机端口:容器内部端口<br>
+[root@ansible ~]# curl localhost:3344		#curl一下看看启动成功了没<br>
+端口暴露</p>
+<p>2.1.2 部署tomcat<br>
+#官方的使用<br>
+docker  run  -it  --rm  tomcat:9.0<br>
+#之前的启动都是后台，停止了容器之后，容器还是可以查到 docker run  -it  --rm，一般用来测试，用完删除</p>
+<p>#下载tomcat<br>
+docker  pull  tomcat<br>
+#启动运行<br>
+docker  run  -d  -p 3355:8080  --name  tomcat01  tomcat<br>
+#测试访问没有问题<br>
+[root@ansible ~]# docker run -d -p 3355:8080 --name tomcat01 tomcat<br>
+492a0a69089a6a80dccc326b5648e832b9787d5a390d62a9f7127a9aa370e905<br>
+[root@ansible ~]# docker exec -it tomcat01 /bin/bash<br>
+#发现问题，1、linux命令变少；2、没有webapps。是因为阿里云镜像的原因，默认是最小镜像，所以不必要的都剔除掉，保证最小可运行的环境<br>
+#进入tomcat中将webapps.dist/*中的东西全部放进webapps中就跟正常安装的一样了<br>
+思考问题：如果以后部署项目，如果每次都要进入容器会十分麻烦，可以在容器外部提供一个映射路径，webapps，我们在外部翻翻杂志项目，就自动同步到内部就好了！<br>
+2.1.3 部署es+kibana<br>
+#es	暴露的端口很多<br>
+#es 特别的耗内存<br>
+#es 的数据一般需要防止到安全目录！挂载</p>
+<h1 id="-net-somenetwork-网络配置-2">--net  somenetwork ?  网络配置</h1>
+<p>#启动elasticsearch	<br>
+docker run -d --name elasticsearch --net somenetwork -p 9200:9200 -p 9300:9300 -e &quot;discovery.type=single-node&quot; elasticsearch:7.6.2<br>
+#启动之后，linux会变卡顿	<br>
+docker  stats  查看cpu的状态<br>
+#测试es是否成功<br>
+#关闭es，增加对他的内存限制，修改配置文件 -e 环境配置修改<br>
+docker run -d --name elasticsearch04 -p 9200:9200 -p 9300:9300 -e &quot;discovery.type=single-node&quot; -e ES_JAVA_OPTS=&quot;-Xms64m -Xmx512m&quot; elasticsearch:7.6.2<br>
+作业：使用kibana连接es？思考网络如何才能连接过去</p>
+<p>2.1.4 部署可视化<br>
+portainer		#刚开始先用这个<br>
+Rancher			#CI/CD再用</p>
+<p>什么是portainer?<br>
+Docker图形化界面管理工具！提供一个后台面板供我们操作！<br>
+#安装命令<br>
+docker  run  -d  -p  8088:9000 <br>
+--restart=always -v /var/run/docker.sock:/var/run/docker.sock --privileged=true portainer/portainer<br>
+#方式，-v 挂载  最后授权</p>
+<p>#访问测试  IP地址:端口号<br>
+#设置一个密码</p>
+<p>#选择本地</p>
+<p>#进入成功</p>
+<p>一般平时不会使用，玩玩就行<br>
+第3章 Docker镜像讲解<br>
+3.1.1 镜像是什么<br>
+镜像是一种轻量级、可执行的独立软件包，用来打包软件运行环境和基于运行开发的软件，它包含运行某个软件所需的所有内容，包括代码、运行时、库、环境变量和配置文件。<br>
+如何得到镜像<br>
+1、	远程仓库下载<br>
+2、	同事拷贝<br>
+3、	自己制作<br>
+3.1.2 Docker镜像加载原理<br>
+UnionFS（联合文件系统）<br>
+UnionFS（联合文件系统）：UnionFS是一种分层、轻量级并且高性能的文件系统，它支持对文件系统的修改作为一次提交来一层层的叠加，同时可以将不同目录挂载到同一个虚拟文件系统下。Union文件系统是Docker镜像的基础。镜像可以通过分层来进行继承，基于基础镜像（没有父镜像），可以制作各种具体的应用镜像。</p>
+<p>特性：一次同时加载多个文件系统，但从外面看起来只能看到一个文件系统，联合加载会把各层文件系统叠加起来，这样最终的文件系统会包含所有底层的文件和目录</p>
+<p>Docker镜像加载原理<br>
+docker的镜像实际上由一层一层的文件系统组成，这种层级的文件系统UnionFS。</p>
+<p>bootfs（boot file system）主要包含bootloader和kernel，bootloader主要是引导加载kernel，linux刚启动是会加载bootfs文件系统,在Docker镜像的最底层是boots。这是一层与我们典型的linux/Unix系统是一样的，包含boot加速器和内核。当boot加载完成之后整个内核都在内存中了，此时内存的使用权已有bootfs转交给内核，此时系统也会卸载bootfs。</p>
+<p>roottfs（boot file system），在bootfs之上。包含的就是典型Linux系统中的/dev，/proc，/bin，/etc等标准目录和文件。rootfs就是各种不同的操作系统发行版，比如Ubuntu，Centos等等。</p>
+<p>平时我们安装虚拟机的Centos都是还几个G，为什么Docker这里才200M</p>
+<p>对于一个精简的OS，rootfs可以很小，只需要包含最基本的命令，工具和持续库就可以了，因为底层直接用Host的kernel，自己只需要提供rootfs就可以了，由此可见对于不同的Linux发行版，bootfs基本是一致的，rootfs会有差别，因此不同的发行版可以公用bootfs。<br>
+虚拟机时分钟级别，容器是秒级<br>
+分层理解<br>
+分层的镜像<br>
+我们可以下载一个镜像，主已观察下载的日志输入，可以看到是一层一层的在下载！</p>
+<p>思考，为什么Docker镜像要采用这种分层的结构呢？<br>
+最大的好处，就是资源共享了！比如有多个镜像都从相同的Base镜像构建而来，那么宿主机只需要在磁盘上保留一份Base镜像，同时内存中也只需要加载一份base镜像，这样就可以为所有的容器服务了，而且镜像的每一层都可以被共享。</p>
+<p>查看镜像分层的方式可以通过docker	inage	inspect命令！<br>
+[root@ansible ~]# docker image inspect redis:latest<br>
+3.1.3 理解<br>
+所有的Docker镜像都期时与一个基础镜像层，当进行修改或增加新的内容时，就会在当前镜像层之上，创建新的镜像层。<br>
+举个简单的例子，假如基于Ubuntu Linux 16.04 创建一个新的镜像，这就是新镜像的第一层；如果在该镜像中添加python包，就会在基础镜像层之上创建第二个镜像层；如果继续添加一个安全补丁，就会创建第三个镜像层。<br>
+该镜像当前已经包含了3个镜像层，如下图所示（这只是用于演示的很简单的例子）。</p>
+<p>添加额外的镜像层的同时，镜像始终保持时点给钱所有镜像的组合，理解这一点非常重要。下图中举了一个简单的列子，每个镜像层包含三个文件，而镜像包含了来自两个镜像层的6个文件。</p>
+<p>上图中的镜像层跟之前图中的略有区别，主要目的时便于展示文件。<br>
+下图中展示了一个稍微复杂的三层镜像，在外部看来整个镜像只有6个文件，这是因为最上层中的文件7是文件5的一个更新版。</p>
+<p>这种情况下，上层镜像层中的文件覆盖了底层镜像层中的文件，这样使得文件的更新版本作为一个新景象层添加到镜像当中。Docker通过储存引擎（新版本采用快照机制）的方式来实现镜像层<br>
+堆栈，并保证多镜像层对外展示为统一的文件系统。Linux上可用的储存引擎有AUF5、Overlay2、DeviceMapper、Btrfs以及ZFS，顾名思义，每种储存引擎都是基于Linux中对应的文件系统或者块设备技术，并且每种储存引擎都有其独有的性能特点。<br>
+Docekr在Windows上仅支持windowsfilter一种储存引擎，该引擎基于NFS文件系统之上实现了分层和cow。<br>
+下图展示了与系统显示相同的三层镜像，所有镜像层堆镜并合并，对外提供统一的视图。</p>
+<p>特点<br>
+Docker镜像都是只读的，当容器启动时，一个新的可用层被加载到镜像的顶部！这一层就是我们通常说的容器层，容器之下的都叫镜像层！</p>
+<p>3.1.4 commit镜像<br>
+docker  commit  #提交容器成为一个新的副本<br>
+#命令和git原理类似<br>
+docker  commit  -m=“提交的描述信息” -a=“作者” 容器ID  目标镜像名:[TAG]<br>
+实战测试<br>
+#启动一个默认的tomcat<br>
+#并将webapps.dist/*复制到webapps中<br>
+#将修改后的容器通过commit提交为一个镜像！以后就可以使用修改过的镜像就可以，这就是我们自己的一个修改过的镜像<br>
+[root@ansible ~]# docker commit -a=&quot;zhaoke&quot; -m=&quot;add webapps app&quot; 9f85f0e8b502 tomcat02:1.0</p>
+<p>学习方式说明:理解概念，但是一定要实践，最后实践和理论相结合一次搞定这个知识</p>
+<p>如果你想要保存当前容器的状态，就可以通过commit来提交，获得一个镜像，就好比我们以前学习的VM时候，快照！<br>
+到这里才算是入门Docker！<br>
+第4章 容器数据卷<br>
+4.1.1 什么是容器数据卷<br>
+docker的理念回顾<br>
+将应用和环境打包成一个镜像！<br>
+如果数据都在容器中，那么我们容易删除，数据就会丢失！ #需求：数据可以持久化<br>
+MySQL，容器删了，删库跑路！  							#需求：MySQL数据可以储存在本地<br>
+容器之间可以有一个数据共享的技术！docker容器中产生的数据，同步到本地！<br>
+这就是卷技术，目录的挂载，将我们容器内的目录挂载到Linux上面</p>
+<p>总结一句话：容器的持久化和同步操作！容器间也可以是数据共享的！</p>
+<p>4.1.2 使用数据卷<br>
+方式一：直接使用命令来挂载  -v<br>
+docker  run  -it  -v   主机目录:容器内目录</p>
+<p>#测试<br>
+[root@ansible ~]# docker run --name centos01 -it -v /home/lianxi:/home centos /bin/bash<br>
+#启动起来是我们可以通过docker  inspect  容器名称</p>
+<p>#测试数据同步<br>
+1、	停止容器<br>
+2、	宿主机上修改文件<br>
+3、	启动容器<br>
+4、	容器内的数据依旧是同步的</p>
+<p>好处:我们以后修改只需要在本地修改即可，容器内会自动同步！<br>
+4.1.3 实战安装MySQL<br>
+思考：MySQL的数据持久化问题<br>
+#获取镜像<br>
+[root@ansible ~]# docker pull mysql:5.7</p>
+<p>#运行容器，需要数据挂载！  #安装启动mysql，需要配置密码的，这是要注意点!<br>
+#官方测试，docker  run  --name some-mysql  -e  MYSQL_ROOT_PASSWORD=my-secret-pw  -d  mysql:tag</p>
+<p>#启动自己的<br>
+-d  后台运行<br>
+-p  端口映射<br>
+-v  卷挂载<br>
+-e  环境配置<br>
+--name   容器名字<br>
+[root@ansible ~]# docker run -d -p 3310:3305 --name=mysql01 -v /home/mysql/conf:/etc/mysql/conf.d -v /home/mysql/data:/var/lib/mysql -e MYSQL_ROOT_PASSWORD=123123 mysql:5.7</p>
+<p>#启动成功之后，我们在本地使用sqlyong连接测试一下</p>
+<p>4.1.4 具名和匿名挂载<br>
+#匿名挂载<br>
+-v	容器内路径！<br>
+[root@ansible ~]#docker run -d -P --name nginx02 -v /ect/nginx nginx</p>
+<p>#查看所有的volume的情况<br>
+[root@ansible ~]# docker volume ls<br>
+DRIVER    VOLUME NAME<br>
+local     4d135f25544b7002ab28f6c89f553cf27b13de14a67e2c5edfdd7c6b72af3b76<br>
+local     55aa9e0eaa1aba71435e8aafd4efa83c223424248a48948046740b8436f33f49</p>
+<p>#这里发现，这种就是匿名挂载，我们在  -v  只写了容器内的路径，没有写容器外的路径！</p>
+<p>#具名挂载<br>
+[root@ansible ~]# docker run  -d -P --name nginx03 -v juming-nginx:/etc/nginx nginx<br>
+8ceb39592038172a5c874bf8b6336257d525df88a735d4cbb51d6980ecd3d38f<br>
+[root@ansible ~]# docker volume ls<br>
+DRIVER    VOLUME NAME<br>
+local     4d135f25544b7002ab28f6c89f553cf27b13de14a67e2c5edfdd7c6b72af3b76<br>
+local     55aa9e0eaa1aba71435e8aafd4efa83c223424248a48948046740b8436f33f49<br>
+local     juming-nginx</p>
+<p>#通过  -v  卷名：容器内路径<br>
+#查看一下这个卷<br>
+[root@ansible ~]# docker volume inspect juming-nginx</p>
+<p>所有的docker容器内的卷，没有指定目录的情况下一般都是在/var/lib/docker/volumes/下<br>
+我们通过具名挂载就可以方便的找到我们的一个卷，大多数情况在使用的是具名挂载<br>
+#如何确定是具名挂载还是匿名挂载，还是指定路径挂载<br>
+-v  容器内路径			#匿名挂载<br>
+-v	卷名：容器内路径	#具名挂载<br>
+-v	/宿主机路径：容器内路径		#指定路径挂载<br>
+拓展<br>
+#通过 -v 容器内路径，ro    rw  改变读写权限<br>
+ro   readonly		#只读<br>
+rw	 readwrite		#可读可写</p>
+<p>#一旦这个设置了容器权限，容器对我们挂载出来的容器就有限定了！<br>
+[root@ansible _data]# docker run -d -P --name nginx04 -v junming-nginx:/etc/nginx:ro nginx<br>
+[root@ansible _data]# docker run -d -P --name nginx04 -v junming-nginx:/etc/nginx:rw nginx<br>
+#ro		只要看到ro就说明这个路径只能通过宿主机来操作，容器内部是无法操作</p>
+<p>4.1.5 初识Dockerfile<br>
+Dockerfile就是用来构建docker镜像的构建文件！命令脚本，先试一下<br>
+通过这个脚本可以生成镜像，镜像是一层一层的，脚本一个一个的命令，每个命令都是一层！<br>
+#测试<br>
+#创建一个dockerfile文件，名字可以随机，建议Dockerfile<br>
+#文件中的内容	指令（大写）	参数<br>
+[root@ansible docker-test-volume]# cat dockerfile1<br>
+FROM centos</p>
+<p>VOLUME [&quot;volume01&quot;,&quot;volume02&quot;]</p>
+<p>CMD echo &quot;----end----&quot;<br>
+CMD /bin/bash</p>
+<p>#这里的每个命令就是镜像的一层</p>
+<p>#启动自己的容器</p>
+<p>这个卷和外部一定有一个同步的目录！</p>
+<p>查看一下挂载的路径</p>
+<p>测试一下刚才的文件是否同步出去了！<br>
+这种方式我们未来使用的十分多，因为我们通常会构建自己的镜像！<br>
+假设构建镜像时没有挂载卷，要手动镜像挂载  -v 卷名：容器内路径！</p>
+<p>4.1.6 数据卷容器<br>
+多个MySQL同步数据！</p>
+<p>启动三个容器，通过我们刚才自己写的镜像启动的</p>
+<p>#测试，可以删除docker01，查看一下docker02和docker03是否还可以访问这个文件<br>
+#测试依旧可以访问</p>
+<p>多个MySQL实现数据共享<br>
+[root@c6635dd740f5 volume01]# docker run -d -p 3310:3306 -v /etc/mysql/cinf.d -v /var/lib/mysql -e MYSQL_ROOT_PASSWORD=123123 --name mysql01 mysql:5.7<br>
+[root@c6635dd740f5 volume01]# docker run -d -p 3310:3306 -e MYSQL_ROOT_PASSWORD=123123 --name mysql02 –volumes-from mysql01 mysql:5.7</p>
+<p>#这个时候，可以实现两个容器数据同步！</p>
+<p>结论：<br>
+容器之间配置信息的传递，数据卷容器的生命周期一致持续到没有容器使用为止。<br>
+但是一旦你持久化到了本地，这个时候，本地的数据是不会删除的！<br>
+第5章 Dockerfile<br>
+5.1.1 Dockerfile介绍<br>
+dockerfile是用来构建docker镜像的文件！命令参数脚本<br>
+构建步骤<br>
+1、	编写一个docker file文件<br>
+2、	docker	build构建成为一个镜像<br>
+3、	docker	run运行镜像<br>
+4、	docker	push发布镜像（DockrHub、阿里云镜像仓库！）<br>
+查看一下官方是怎么做的</p>
+<p>很多官方镜像都是基础包，很多功能都没有，我们通常会自己搭建自己的镜像<br>
+官方既然可以搭建镜像，我们自己也没问题<br>
+5.1.2 Dockerfile构建过程<br>
+基础知识：<br>
+1、	每个保留关键字（指令）都是必须是大写字母<br>
+2、	指令是从上到下顺序执行<br>
+3、	#	表示注释<br>
+4、	每一个指令都会创建提交！</p>
+<p>dockerfile是面向开发的，我们以后要发布项目，做镜像，就需要编写dockerfile文件，这个文件十分简单<br>
+docker镜像逐渐成为企业交付的标准，必须掌握！<br>
+步骤：开发，部署，运维。。。缺一不可！<br>
+DockerFile构建文件，定义了一切的步骤，源代码<br>
+DockerImages：通过DockerFile构建生成的镜像，最终发布和运行的产品。<br>
+Docker容器：容器就是镜像运行起来提供服务器</p>
+<p>5.1.3 docker的指令<br>
+之前都是使用其他人的，现在知道了这些指令后，自己练习制作一个镜像<br>
+FROM				#基础镜像，一切从这里开始构建centos<br>
+MAINTAINER			#镜像是谁写的，姓名+邮箱<br>
+RUN					#镜像构建的时候需要运行的命令<br>
+ADD					#步骤，tomcat镜像，这个tomcat压缩包！添加内容<br>
+WORKDIR				#镜像的工作目录<br>
+VOLUME				#设计一个容器卷，就是挂载的目录位置<br>
+EXPOSE				#暴露端口配置<br>
+CMD					#指定这个容器启动的时候要运行的命令，只有一个会生效，可被替代<br>
+ENTRYPOINT			#指定这个容器启动的时候要运行的命令，可以追加命令<br>
+ONBUILD				#当构建一个被继承Dockerfile这个时候就会运行ONBUILD的指令，触发指令<br>
+COPY				#类似ADD，将我们文件拷贝到镜像中<br>
+ENV					#构建的时候设置环境变量！</p>
+<p>5.1.4 实战测试<br>
+Docker  Hub中99%镜像都是从这个基础镜像过来的FROM scratch,然后配置需要的软件和配置来进行的创建</p>
+<p>创建一个自己的centos<br>
+#第一步，编写Dockerfile的文件</p>
+<p>#第二步，通过这个文件构建镜像<br>
+命令 docker  build  -f  dockerfile文件路径  -t  镜像名：[tag]<br>
+Successfully built bd95efb41428<br>
+Successfully tagged mycentos:0.1<br>
+#3、测试运行<br>
+对比之前的centos</p>
+<p>增加之后的镜像</p>
+<p>可以列出本地镜像的变更历史</p>
+<p>这样平时拿到一个镜像，可以研究一下它是怎么做的了<br>
+5.1.5 CMD和CNTRYPOINT的区别<br>
+CMD			#指定这个容器启动的时候要运行的命令，只有最后一个会生效，可被替代<br>
+ENTRYPOINT	#指定这个容器启动的时候要运行的命令，可以追加命令</p>
+<p>测试CMD<br>
+#编写dockerfile文件<br>
+[root@ansible dockerfile]# vim docker-cmd-test<br>
+FROM centos<br>
+CMD [&quot;ls&quot;,&quot;-a&quot;]<br>
+#构建镜像<br>
+[root@ansible dockerfile]# docker build -f docker-cmd-test -t cmdtest .<br>
+#run运行，发现ls  -a命令生效<br>
+[root@ansible dockerfile]# docker run a152bde80c10<br>
+.<br>
+..<br>
+.dockerenv<br>
+bin<br>
+dev<br>
+etc<br>
+home<br>
+lib<br>
+lib64<br>
+#想追加一个命令  -l   ls  -al<br>
+[root@ansible dockerfile]# docker run a152bde80c10 -l<br>
+docker: Error response from daemon: OCI runtime create failed: container_linux.go:370: starting container process caused: exec: &quot;-l&quot;: executable file not found in $PATH: unknown.<br>
+#CMD的情况下 -l  替换了CMD  [“ls”,”-a”]命令，-l不是命令所以报错。CMD会把之前的命令替换掉<br>
+测试ENTRYPOINT<br>
+#编写dockerfile文件<br>
+[root@ansible dockerfile]# vim docker-cmd-entrypoin<br>
+FROM centos<br>
+ENTRYPOINT [&quot;ls&quot;,&quot;-a&quot;]<br>
+#构建镜像<br>
+[root@ansible dockerfile]# docker build -f docker-cmd-entrypoin -t entrypoint-test .<br>
+#追加一个命令发现，是直接追加在ENTRYPOINT命令后面<br>
+[root@ansible dockerfile]# docker run e10772e30b78 -l<br>
+total 0<br>
+drwxr-xr-x   1 root root   6 Dec 16 03:18 .<br>
+drwxr-xr-x   1 root root   6 Dec 16 03:18 ..<br>
+-rwxr-xr-x   1 root root   0 Dec 16 03:18 .dockerenv<br>
+lrwxrwxrwx   1 root root   7 Nov  3 15:22 bin -&gt; usr/bin<br>
+drwxr-xr-x   5 root root 340 Dec 16 03:18 dev<br>
+drwxr-xr-x   1 root root  66 Dec 16 03:18 etc<br>
+drwxr-xr-x   2 root root   6 Nov  3 15:22 home<br>
+Dockerfile中很多命令都十分相似，我们需要了解他们的区别，我们最好的学习就是对比他们然后测试效果！<br>
+5.1.6 实战：tomcat镜像<br>
+1、	准备镜像文件tomcat压缩包，jdk的压缩包！</p>
+<p>2、	编写dockerfile文件，官方命名dockerfile，build会自动寻找这个文件，就不需要-f指定了<br>
+[root@ansible tomcat]# cat Dockerfile<br>
+FROM centos<br>
+MAINTAINER andi<a href="mailto:andidechuan@163.com">andidechuan@163.com</a></p>
+<p>COPY readme.txt /usr/local/readme.txt</p>
+<p>ADD jdk-8u60-linux-x64.tar.gz /usr/local/<br>
+ADD apache-tomcat-9.0.41.tar.gz /usr/local/</p>
+<p>RUN yum -y install vim</p>
+<p>ENV MYPATH /usr/local<br>
+WORKDIR $MYPATH</p>
+<p>ENV JAVA_HOME /usr/local/jdk1.8.0_60<br>
+ENV CLASSPATH <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>J</mi><mi>A</mi><mi>V</mi><msub><mi>A</mi><mi>H</mi></msub><mi>O</mi><mi>M</mi><mi>E</mi><mi mathvariant="normal">/</mi><mi>l</mi><mi>i</mi><mi>b</mi><mi mathvariant="normal">/</mi><mi>d</mi><mi>t</mi><mi mathvariant="normal">.</mi><mi>j</mi><mi>a</mi><mi>r</mi><mo>:</mo></mrow><annotation encoding="application/x-tex">JAVA_HOME/lib/dt.jar:</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathdefault" style="margin-right:0.09618em;">J</span><span class="mord mathdefault">A</span><span class="mord mathdefault" style="margin-right:0.22222em;">V</span><span class="mord"><span class="mord mathdefault">A</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.32833099999999993em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathdefault mtight" style="margin-right:0.08125em;">H</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mord mathdefault" style="margin-right:0.02778em;">O</span><span class="mord mathdefault" style="margin-right:0.10903em;">M</span><span class="mord mathdefault" style="margin-right:0.05764em;">E</span><span class="mord">/</span><span class="mord mathdefault" style="margin-right:0.01968em;">l</span><span class="mord mathdefault">i</span><span class="mord mathdefault">b</span><span class="mord">/</span><span class="mord mathdefault">d</span><span class="mord mathdefault">t</span><span class="mord">.</span><span class="mord mathdefault" style="margin-right:0.05724em;">j</span><span class="mord mathdefault">a</span><span class="mord mathdefault" style="margin-right:0.02778em;">r</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">:</span></span></span></span>JAVA_HOME/lib/tools.jar<br>
+ENV CATALINA_HOME /usr/local/apache-tomcat-9.0.41<br>
+ENV CATALINA_BASH /usr/local/apache-tomcat-9.0.41<br>
+ENV PATH <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>P</mi><mi>A</mi><mi>T</mi><mi>H</mi><mo>:</mo></mrow><annotation encoding="application/x-tex">PATH:</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathdefault" style="margin-right:0.13889em;">P</span><span class="mord mathdefault">A</span><span class="mord mathdefault" style="margin-right:0.13889em;">T</span><span class="mord mathdefault" style="margin-right:0.08125em;">H</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">:</span></span></span></span>JAVA_HOME/bin:<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>C</mi><mi>A</mi><mi>T</mi><mi>A</mi><mi>L</mi><mi>I</mi><mi>N</mi><msub><mi>A</mi><mi>H</mi></msub><mi>O</mi><mi>M</mi><mi>E</mi><mi mathvariant="normal">/</mi><mi>l</mi><mi>i</mi><mi>b</mi><mo>:</mo></mrow><annotation encoding="application/x-tex">CATALINA_HOME/lib:</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathdefault" style="margin-right:0.07153em;">C</span><span class="mord mathdefault">A</span><span class="mord mathdefault" style="margin-right:0.13889em;">T</span><span class="mord mathdefault">A</span><span class="mord mathdefault">L</span><span class="mord mathdefault" style="margin-right:0.07847em;">I</span><span class="mord mathdefault" style="margin-right:0.10903em;">N</span><span class="mord"><span class="mord mathdefault">A</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.32833099999999993em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathdefault mtight" style="margin-right:0.08125em;">H</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mord mathdefault" style="margin-right:0.02778em;">O</span><span class="mord mathdefault" style="margin-right:0.10903em;">M</span><span class="mord mathdefault" style="margin-right:0.05764em;">E</span><span class="mord">/</span><span class="mord mathdefault" style="margin-right:0.01968em;">l</span><span class="mord mathdefault">i</span><span class="mord mathdefault">b</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">:</span></span></span></span>CATALINA_HOME/bin</p>
+<p>EXPOSE 8080</p>
+<p>CMD /usr/local/apache-tomcat-9.0.41/bin/startup.sh &amp;&amp; tail -F /url/local/apache-tomcat-9.0.41/bin/logs/catalina.out<br>
+3、	构建镜像<br>
+#docker build -t zktomcat .<br>
+4、	启动镜像<br>
+5、	访问测试<br>
+6、	发布项目（由于做了卷挂载，我们直接在本地编写项目就可以发布了！）</p>
+<?xml version="1.0" encoding="UTF-8"?>
+<p><web-app xmlns="http://java.sun.com/xml/ns/javaee"
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
+                               http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+           version="2.5"></p>
+  </web-app>
+jsp
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>hello 赵科</title>
+</head>
+<body>
+Hello World!<br/>
+<%
+System.out.println(“----my test web logs----”);
+%>
+</body>
+</html>
+发现：项目部署成功，可以直接访问ok！
+<p>以后的开发步骤：需要掌握Dockerfile的编写！我们之后的一切都是使用docker镜像来发布运行！</p>
+<p>5.1.7 发布自己的镜像<br>
+Dockerhub<br>
+1、	地址https://hub.docker.com/注册自己的账号<br>
+2、	确定这个账号可以登录<br>
+3、	在服务器上提交自己的镜像<br>
+docker  login  -u 用户名  -p 密码<br>
+[root@ansible tomcat]# docker login -u 18730935776<br>
+Password:<br>
+WARNING! Your password will be stored unencrypted in /root/.docker/config.json.<br>
+Configure a credential helper to remove this warning. See<br>
+https://docs.docker.com/engine/reference/commandline/login/#credentials-store</p>
+<p>Login Succeeded<br>
+4、	登录完毕后就可以提交镜像了，就是一步docker  push<br>
+#push镜像的问题<br>
+[root@ansible tomcat]# docker push andi/zktomcat:0.1<br>
+The push refers to repository [docker.io/andi/zktomcat]<br>
+An image does not exist locally with the tag: andi/zktomcat<br>
+#解决，添一个tag<br>
+[root@ansible tomcat]# docker tag bd8499565efd 18730935776[必须要和自己的hub账号一样]/tomcat:1.0<br>
+#上传过程中发现一直连接超时，因为Hub网站是外网，所以在/etc/resolv.conf中添加一个8.8.8.8就可以了<br>
+Get https://registry-1.docker.io/v2/: dial tcp: lookup registry-1.docker.io on 8.8.8.8:53: read udp 192.168.2.101:40422-&gt;8.8.8.8:53: i/o timeout<br>
+#docker push上去即可！发布镜像时尽量带上版本号<br>
+[root@ansible ~]# docker push 18730935776/zktomcat:1.0</p>
+<p>提交的时候也是按照镜像的层级来进行提交的！<br>
+5.1.8 发布到阿里云镜像上<br>
+1、	登录到阿里云<br>
+2、	找到容器镜像服务<br>
+3、	创建命名空间</p>
+<p>4、	创建容器镜像</p>
+<p>5、	浏览</p>
+<p>阿里云容器上传参考官方文档就可以	<br>
+5.1.9 小结</p>
+<p>第6章 docker网络<br>
+6.1.1 理解docker0<br>
+第一步清空所有环境<br>
+测试</p>
+<p>三个网络<br>
+#问题，docker是如何处理容器网络访问的？</p>
+<p>#运行一个容器<br>
+[root@localhost ~]# docker run -d -P --name tomcat01 tomcat<br>
+#查看容器的内部网络地址 ip addr，发现容器启动的时候<br>
+[root@localhost ~]# docker exec -it tomcat01 ip addr<br>
+1: lo: &lt;LOOPBACK,UP,LOWER_UP&gt; mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000<br>
+link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00<br>
+inet 127.0.0.1/8 scope host lo<br>
+valid_lft forever preferred_lft forever<br>
+6: eth0@if7: &lt;BROADCAST,MULTICAST,UP,LOWER_UP&gt; mtu 1500 qdisc noqueue state UP group default<br>
+link/ether 02:42:ac:11:00:02 brd ff:ff:ff:ff:ff:ff link-netnsid 0<br>
+inet 172.17.0.2/16 brd 172.17.255.255 scope global eth0<br>
+valid_lft forever preferred_lft forever</p>
+<p>#通过ping命令查看linux能否联通容器内部<br>
+[root@localhost ~]# ping 172.17.0.2<br>
+PING 172.17.0.2 (172.17.0.2) 56(84) bytes of data.<br>
+64 bytes from 172.17.0.2: icmp_seq=1 ttl=64 time=0.447 ms<br>
+64 bytes from 172.17.0.2: icmp_seq=2 ttl=64 time=0.060 ms<br>
+原理<br>
+1、	我们每启动一个docker容器，docker就会给docker容器分配一个ip，我们只要安装了docker，就会有一个网卡docker0桥接模式，使用的技术是vethc -pair技术！<br>
+再次测试ip addr</p>
+<p>2、在启动了一个容器测试时，发现又多了一对网卡</p>
+<p>#我们发现这个容器带来网卡，都是一对对的</p>
+<h1 id="vethc-pair就是一堆的虚拟设备接口他们都是成对出现的一端连着协议一端彼此相连-2">vethc -pair就是一堆的虚拟设备接口，他们都是成对出现的，一端连着协议，一端彼此相连</h1>
+<p>#正因为有这个特性，vethc-pair充当一个桥梁，连接各州虚拟网络设备的<br>
+#OpenStac，Docker容器之间的连接，ovs的连接，都是使用vethc -pair技术<br>
+3、测试tomcat01和tomcat02是否可以ping通！<br>
+[root@localhost ~]# docker exec -it tomcat02 ping 172.17.0.2<br>
+#结论，容器和容器之间是可以互相ping通的！<br>
+如图一个网络模型图：</p>
+<p>结论：tomcat01和tomcat02是公用的一个路由器，docker0.<br>
+所有的容器不指定网络的情况下，都是docker0路由的，docker会给我们的容器分配一个默认的可用ip<br>
+小结<br>
+Docker使用的是Liunx 的桥接</p>
+<p>Docker中的所有网络接口都是虚拟的，虚拟的转发效率更高（内网传递文件！）<br>
+只要容器删除，对应网桥一对就没了！</p>
+<p>6.1.2 –link<br>
+思考一个场景，我们编写了一个微服务，database url=ip，项目不重启，数据库ip换掉了，我们希望可以梳理这个问题，可以用名字来进行访问容器？<br>
+[root@zhaoke ~]# docker exec -it tomcat02 ping tomcat01<br>
+ping: tomcat01: Name or service not known<br>
+#直接使用ping命令无法ping通，如何可以解决<br>
+#通过—link既可以解决了网络连通问题<br>
+[root@zhaoke ~]# docker run -d -P --name tomcat03 --link tomcat02 tomcat<br>
+[root@zhaoke ~]# docker exec -it tomcat03 ping tomcat02<br>
+PING tomcat02 (172.17.0.3) 56(84) bytes of data.<br>
+64 bytes from tomcat02 (172.17.0.3): icmp_seq=1 ttl=64 time=0.110 ms<br>
+64 bytes from tomcat02 (172.17.0.3): icmp_seq=2 ttl=64 time=0.130 ms<br>
+#反向无法ping通<br>
+[root@zhaoke ~]# docker exec -it tomcat02 ping tomcat03<br>
+ping: tomcat03: Name or service not known<br>
+探究：inspect</p>
+<p>其实这个tomcat03就是在本地配置了tomcat02的地址<br>
+#查看hosts配置，在这里原理发现<br>
+[root@zhaoke ~]# docker exec -it tomcat03 cat /etc/hosts<br>
+127.0.0.1	localhost<br>
+::1	localhost ip6-localhost ip6-loopback<br>
+fe00::0	ip6-localnet<br>
+ff00::0	ip6-mcastprefix<br>
+ff02::1	ip6-allnodes<br>
+ff02::2	ip6-allrouters<br>
+172.17.0.3	tomcat02 ec420d642219<br>
+172.17.0.4	c97b9380df41<br>
+本质探究：--link就是我们在hosts配置中增加了一个172.18.0.3 tomcat02 IP地址<br>
+我们现在使用Docker已经不建议使用—link了！<br>
+自定义网络！不适用docker0！<br>
+docker0问题：它不支持容器连接访问！<br>
+6.1.3 自定义网络</p>
+<p>Docker</p>
+<p>作者：赵科<br>
+归档：学习笔记<br>
+2020/8/30</p>
+<ol>
+<li>目录<br>
+第1章 常用命令	2<br>
+1.1.1 docker介绍	2<br>
+1.1.2 安装Docker	2<br>
+1.1.3 帮助命令	3<br>
+1.1.4 镜像命令	3<br>
+1.1.5 容器命令	4<br>
+1.1.6 常用其他命令	5<br>
+1.1.7 命令小结	6<br>
+第2章 部署服务	7<br>
+2.1.1 部署Nginx	7<br>
+2.1.2 部署tomcat	8<br>
+2.1.3 部署es+kibana	8<br>
+2.1.4 部署可视化	9<br>
+第3章 Docker镜像讲解	10<br>
+3.1.1 镜像是什么	10<br>
+3.1.2 Docker镜像加载原理	11<br>
+3.1.3 理解	12<br>
+3.1.4 commit镜像	14<br>
+第4章 容器数据卷	14<br>
+4.1.1 什么是容器数据卷	14<br>
+4.1.2 使用数据卷	15<br>
+4.1.3 实战安装MySQL	16<br>
+4.1.4 具名和匿名挂载	16<br>
+4.1.5 初识Dockerfile	18<br>
+4.1.6 数据卷容器	20<br>
+第5章 Dockerfile	22<br>
+5.1.1 Dockerfile介绍	22<br>
+5.1.2 Dockerfile构建过程	23<br>
+5.1.3 docker的指令	24<br>
+5.1.4 实战测试	24<br>
+5.1.5 CMD和CNTRYPOINT的区别	26<br>
+5.1.6 实战：tomcat镜像	28<br>
+5.1.7 发布自己的镜像	29<br>
+5.1.8 发布到阿里云镜像上	30</li>
+</ol>
+<p>第1章 常用命令<br>
+1.1.1 docker介绍<br>
+docker的三大核心组件	镜像	容器	仓库<br>
+镜像存放在仓库中，启动后变为容器<br>
+1.1.2 安装Docker<br>
+登录https://docs.docker.com/get-docker/选择版本进行下载<br>
+如果系统内已有Docker需要先进行卸载<br>
+yum remove docker <br>
+docker-client <br>
+docker-client-latest <br>
+docker-common <br>
+docker-latest <br>
+docker-latest-logrotate <br>
+docker-logrotate <br>
+docker-engine<br>
+安装需要的安装包<br>
+yum install -y yum-utils</p>
+<h1 id="设置镜像的仓库-3">设置镜像的仓库</h1>
+<p>yum-config-manager <br>
+--add-repo <br>
+https://download.docker.com/linux/centos/docker-ce.repo			#默认是国外的<br>
+yum-config-manager <br>
+--add-repo <br>
+https://m2uqq1c2.mirror.aliyuncs.com					  #建议用阿里云的<br>
+#更新yum软件包索引<br>
+yum	makecache  fast<br>
+#安装docker相关的内容		docker-ce	社区版	ee企业版<br>
+yum install docker-ce docker-ce-cli containerd.io<br>
+#启动docker<br>
+systemctl  start  docker<br>
+docker	version  #查看是否安装成功和版本信息<br>
+#测试hello-world<br>
+docker	run	hello-world<br>
+阿里云镜像加速<br>
+登录阿里云</p>
+<p>配置加速<br>
+sudo mkdir -p /etc/docker<br>
+sudo tee /etc/docker/daemon.json &lt;&lt;-'EOF'<br>
+{<br>
+&quot;registry-mirrors&quot;: [&quot;https://m2uqq1c2.mirror.aliyuncs.com&quot;]<br>
+}<br>
+EOF<br>
+sudo systemctl daemon-reload<br>
+sudo systemctl restart docker<br>
+成功！<br>
+1.1.3 帮助命令<br>
+docker	version		#docker的详细信息<br>
+docker	info			#显示docker的系统信息<br>
+docker	命令 –help	#帮助命令<br>
+1.1.4 镜像命令<br>
+docker images		#查看所有本地的主机上的镜像<br>
+[root@localhost ~]# docker images		#查看所有本地的主机上的镜像<br>
+REPOSITORY          TAG                 IMAGE ID            CREATED             SIZE</p>
+<p>#解释<br>
+REPOSITORY	镜像的仓库源<br>
+TAG			镜像的标签<br>
+IMAGE ID		镜像的ID<br>
+CREATED		镜像的创建时间<br>
+SIZE			镜像的大小<br>
+#可选项<br>
+-a, --all			列出所有镜像<br>
+-q, --quiet		只显示镜像ID</p>
+<p>docker	search	搜索镜像<br>
+docker	search	[镜像名称]<br>
+#可选项，通过收藏来过滤<br>
+--filter=STARS=3000		搜出来的镜像就是STARS大于3000的</p>
+<p>docker	pull		下载镜像<br>
+docker 	pull [镜像名称]<br>
+docker 	pull [镜像名称]:[版本号]</p>
+<p>1.1.5 容器命令<br>
+说明：我们有了镜像才可以创建容器，linux，下载一个centos镜像来测试<br>
+docker	pull	 centos<br>
+新建容器并启动<br>
+docker	run	 [可选参数] images<br>
+#参数说明<br>
+--name=”Name”		#容器名字	tomcat01	tomcat02,用来区分容器<br>
+-d					后台方式运行<br>
+-it					使用交互方式运行，进入容器产看内容<br>
+-p					指定容器的端口 -p	8080:8080		主机端口:容器端口<br>
+-P					随机指定端口<br>
+#测试	启动并进入容器<br>
+[root@localhost ~]# docker run -it centos /bin/bash<br>
+[root@8a1f989ad7da /]# ls		#查看容器内的centos，基础版本，很多命令都是不完善的！<br>
+bin  dev  etc  home  lib  lib64  lost+found  media  mnt  opt  proc  root  run  sbin  srv  sys  tmp  usr  var<br>
+[root@8a1f989ad7da /]# exit		#从容器中退回主机<br>
+exit<br>
+列出所有的运行的容器<br>
+#docker	ps	命令	<br>
+-a		#列出当先正在运行的容器，带出历史运行过的容器<br>
+-n=？	#显示最近创建的容器<br>
+-q		#只显示容器的编号<br>
+[root@localhost ~]# docker ps<br>
+CONTAINER ID        IMAGE               COMMAND             CREATED             STATUS              PORTS               NAMES<br>
+[root@localhost ~]# docker ps -a<br>
+CONTAINER ID        IMAGE               COMMAND             CREATED             STATUS                      PORTS               NAMES<br>
+8a1f989ad7da        centos              &quot;/bin/bash&quot;         29 minutes ago      Exited (0) 53 seconds ago                       kind_khorana<br>
+[root@localhost ~]# docker ps -aq<br>
+8a1f989ad7da<br>
+退出容器<br>
+exit		#直接停止并退出容器<br>
+crl + P + Q	#容器不停止退出<br>
+进入后台运行的容器<br>
+docker	exec  -it  容器名  /bin/bash<br>
+删除镜像<br>
+docker	rmi	-f	[镜像ID]					#删除镜像<br>
+docker	rmi	-f	$(docker  images  -aq)		#删除所有镜像<br>
+docker	ps	-a|xargs	docker	rm				#删除所有镜像<br>
+启动和停止容器<br>
+docker	start	  	容器id		#启动容器<br>
+docker	restart 	容器id		#重启容器<br>
+docker	stop		容器id		#停止当前正在运行的容器	<br>
+docker	kill		容器id		#强制停止当前容器<br>
+1.1.6 常用其他命令<br>
+后台启动容器<br>
+docker	run	-d	镜像名<br>
+[root@localhost ~]# docker run -d centos<br>
+#问题docker	ps，发现centos停止了<br>
+#常见的坑，docker容器使用后台运行，就必须要有一个前台进程，docker发现没有应用，就会自动停止<br>
+#nginx，容器启动后，发现自己没有提供服务，就会立即停止，就没有程序了<br>
+查看日志<br>
+docker	logs -f -t容器	#没有日志<br>
+#自己编写一段shell脚本<br>
+[root@localhost ~]# docker run -d centos /bin/sh -c &quot;while true;do echo zhaoke;sleep 1;done&quot;<br>
+#显示日志<br>
+-tf				#显示日志<br>
+--tail number		#显示日志的条数<br>
+[root@localhost ~]# docker logs -t -f --tail 10 65f64c8eaa95<br>
+查看容器中的进程信息ps<br>
+top命令		#docker	top	容器id<br>
+[root@localhost ~]# docker top 65f64c8eaa95<br>
+UID                 PID                 PPID                C                   STIME               TTY                 TIME                CMD<br>
+root                13324               13307               0                   19:48               ?                   00:00:01            /bin/sh -c while true;do echo zhaoke;sleep 1;done<br>
+查看镜像的元数据<br>
+#命令<br>
+docker	inspect	容器id<br>
+进入当前正在运行的容器<br>
+#我们通常使用容器都是后台方式运行的，需要进入容器，修改一些配置<br>
+#命令<br>
+方式一:docker	exec  -it	容器id  /bin/bash   #进入容器开启一个新的终端，可以再里面操作<br>
+方式二:docker	attach	容器id					 #进入容器正在执行的终端，不会启动新的进程<br>
+从容器内拷贝文件<br>
+docker	cp	容器id:容器内路径	 目的的主机路径<br>
+#可以将容器内的文件传输到主机上<br>
+将镜像导出<br>
+docker	save  -o  镜像名.tar.gz  镜像名:版本号<br>
+镜像导入<br>
+docker  load  &lt;  镜像名.tar.gz<br>
+1.1.7 命令小结</p>
+<p>第2章 部署服务<br>
+2.1.1 部署Nginx<br>
+docker search nginx	#先搜索nginx镜像	可以看到帮助文档<br>
+docker pull	nginx	#下载nginx<br>
+#运行测试<br>
+[root@ansible ~]# docker run -d --name nginx01 -p 3344:80 nginx<br>
+b95261d58d6475885235b7e23033aea2399c7086a8cfb85396faaa37bff76772<br>
+#-d	后台运行	#--name	给容器命名	  #-p 宿主机端口:容器内部端口<br>
+[root@ansible ~]# curl localhost:3344		#curl一下看看启动成功了没<br>
+端口暴露</p>
+<p>2.1.2 部署tomcat<br>
+#官方的使用<br>
+docker  run  -it  --rm  tomcat:9.0<br>
+#之前的启动都是后台，停止了容器之后，容器还是可以查到 docker run  -it  --rm，一般用来测试，用完删除</p>
+<p>#下载tomcat<br>
+docker  pull  tomcat<br>
+#启动运行<br>
+docker  run  -d  -p 3355:8080  --name  tomcat01  tomcat<br>
+#测试访问没有问题<br>
+[root@ansible ~]# docker run -d -p 3355:8080 --name tomcat01 tomcat<br>
+492a0a69089a6a80dccc326b5648e832b9787d5a390d62a9f7127a9aa370e905<br>
+[root@ansible ~]# docker exec -it tomcat01 /bin/bash<br>
+#发现问题，1、linux命令变少；2、没有webapps。是因为阿里云镜像的原因，默认是最小镜像，所以不必要的都剔除掉，保证最小可运行的环境<br>
+#进入tomcat中将webapps.dist/*中的东西全部放进webapps中就跟正常安装的一样了<br>
+思考问题：如果以后部署项目，如果每次都要进入容器会十分麻烦，可以在容器外部提供一个映射路径，webapps，我们在外部翻翻杂志项目，就自动同步到内部就好了！<br>
+2.1.3 部署es+kibana<br>
+#es	暴露的端口很多<br>
+#es 特别的耗内存<br>
+#es 的数据一般需要防止到安全目录！挂载</p>
+<h1 id="-net-somenetwork-网络配置-3">--net  somenetwork ?  网络配置</h1>
+<p>#启动elasticsearch	<br>
+docker run -d --name elasticsearch --net somenetwork -p 9200:9200 -p 9300:9300 -e &quot;discovery.type=single-node&quot; elasticsearch:7.6.2<br>
+#启动之后，linux会变卡顿	<br>
+docker  stats  查看cpu的状态<br>
+#测试es是否成功<br>
+#关闭es，增加对他的内存限制，修改配置文件 -e 环境配置修改<br>
+docker run -d --name elasticsearch04 -p 9200:9200 -p 9300:9300 -e &quot;discovery.type=single-node&quot; -e ES_JAVA_OPTS=&quot;-Xms64m -Xmx512m&quot; elasticsearch:7.6.2<br>
+作业：使用kibana连接es？思考网络如何才能连接过去</p>
+<p>2.1.4 部署可视化<br>
+portainer		#刚开始先用这个<br>
+Rancher			#CI/CD再用</p>
+<p>什么是portainer?<br>
+Docker图形化界面管理工具！提供一个后台面板供我们操作！<br>
+#安装命令<br>
+docker  run  -d  -p  8088:9000 <br>
+--restart=always -v /var/run/docker.sock:/var/run/docker.sock --privileged=true portainer/portainer<br>
+#方式，-v 挂载  最后授权</p>
+<p>#访问测试  IP地址:端口号<br>
+#设置一个密码</p>
+<p>#选择本地</p>
+<p>#进入成功</p>
+<p>一般平时不会使用，玩玩就行<br>
+第3章 Docker镜像讲解<br>
+3.1.1 镜像是什么<br>
+镜像是一种轻量级、可执行的独立软件包，用来打包软件运行环境和基于运行开发的软件，它包含运行某个软件所需的所有内容，包括代码、运行时、库、环境变量和配置文件。<br>
+如何得到镜像<br>
+1、	远程仓库下载<br>
+2、	同事拷贝<br>
+3、	自己制作<br>
+3.1.2 Docker镜像加载原理<br>
+UnionFS（联合文件系统）<br>
+UnionFS（联合文件系统）：UnionFS是一种分层、轻量级并且高性能的文件系统，它支持对文件系统的修改作为一次提交来一层层的叠加，同时可以将不同目录挂载到同一个虚拟文件系统下。Union文件系统是Docker镜像的基础。镜像可以通过分层来进行继承，基于基础镜像（没有父镜像），可以制作各种具体的应用镜像。</p>
+<p>特性：一次同时加载多个文件系统，但从外面看起来只能看到一个文件系统，联合加载会把各层文件系统叠加起来，这样最终的文件系统会包含所有底层的文件和目录</p>
+<p>Docker镜像加载原理<br>
+docker的镜像实际上由一层一层的文件系统组成，这种层级的文件系统UnionFS。</p>
+<p>bootfs（boot file system）主要包含bootloader和kernel，bootloader主要是引导加载kernel，linux刚启动是会加载bootfs文件系统,在Docker镜像的最底层是boots。这是一层与我们典型的linux/Unix系统是一样的，包含boot加速器和内核。当boot加载完成之后整个内核都在内存中了，此时内存的使用权已有bootfs转交给内核，此时系统也会卸载bootfs。</p>
+<p>roottfs（boot file system），在bootfs之上。包含的就是典型Linux系统中的/dev，/proc，/bin，/etc等标准目录和文件。rootfs就是各种不同的操作系统发行版，比如Ubuntu，Centos等等。</p>
+<p>平时我们安装虚拟机的Centos都是还几个G，为什么Docker这里才200M</p>
+<p>对于一个精简的OS，rootfs可以很小，只需要包含最基本的命令，工具和持续库就可以了，因为底层直接用Host的kernel，自己只需要提供rootfs就可以了，由此可见对于不同的Linux发行版，bootfs基本是一致的，rootfs会有差别，因此不同的发行版可以公用bootfs。<br>
+虚拟机时分钟级别，容器是秒级<br>
+分层理解<br>
+分层的镜像<br>
+我们可以下载一个镜像，主已观察下载的日志输入，可以看到是一层一层的在下载！</p>
+<p>思考，为什么Docker镜像要采用这种分层的结构呢？<br>
+最大的好处，就是资源共享了！比如有多个镜像都从相同的Base镜像构建而来，那么宿主机只需要在磁盘上保留一份Base镜像，同时内存中也只需要加载一份base镜像，这样就可以为所有的容器服务了，而且镜像的每一层都可以被共享。</p>
+<p>查看镜像分层的方式可以通过docker	inage	inspect命令！<br>
+[root@ansible ~]# docker image inspect redis:latest<br>
+3.1.3 理解<br>
+所有的Docker镜像都期时与一个基础镜像层，当进行修改或增加新的内容时，就会在当前镜像层之上，创建新的镜像层。<br>
+举个简单的例子，假如基于Ubuntu Linux 16.04 创建一个新的镜像，这就是新镜像的第一层；如果在该镜像中添加python包，就会在基础镜像层之上创建第二个镜像层；如果继续添加一个安全补丁，就会创建第三个镜像层。<br>
+该镜像当前已经包含了3个镜像层，如下图所示（这只是用于演示的很简单的例子）。</p>
+<p>添加额外的镜像层的同时，镜像始终保持时点给钱所有镜像的组合，理解这一点非常重要。下图中举了一个简单的列子，每个镜像层包含三个文件，而镜像包含了来自两个镜像层的6个文件。</p>
+<p>上图中的镜像层跟之前图中的略有区别，主要目的时便于展示文件。<br>
+下图中展示了一个稍微复杂的三层镜像，在外部看来整个镜像只有6个文件，这是因为最上层中的文件7是文件5的一个更新版。</p>
+<p>这种情况下，上层镜像层中的文件覆盖了底层镜像层中的文件，这样使得文件的更新版本作为一个新景象层添加到镜像当中。Docker通过储存引擎（新版本采用快照机制）的方式来实现镜像层<br>
+堆栈，并保证多镜像层对外展示为统一的文件系统。Linux上可用的储存引擎有AUF5、Overlay2、DeviceMapper、Btrfs以及ZFS，顾名思义，每种储存引擎都是基于Linux中对应的文件系统或者块设备技术，并且每种储存引擎都有其独有的性能特点。<br>
+Docekr在Windows上仅支持windowsfilter一种储存引擎，该引擎基于NFS文件系统之上实现了分层和cow。<br>
+下图展示了与系统显示相同的三层镜像，所有镜像层堆镜并合并，对外提供统一的视图。</p>
+<p>特点<br>
+Docker镜像都是只读的，当容器启动时，一个新的可用层被加载到镜像的顶部！这一层就是我们通常说的容器层，容器之下的都叫镜像层！</p>
+<p>3.1.4 commit镜像<br>
+docker  commit  #提交容器成为一个新的副本<br>
+#命令和git原理类似<br>
+docker  commit  -m=“提交的描述信息” -a=“作者” 容器ID  目标镜像名:[TAG]<br>
+实战测试<br>
+#启动一个默认的tomcat<br>
+#并将webapps.dist/*复制到webapps中<br>
+#将修改后的容器通过commit提交为一个镜像！以后就可以使用修改过的镜像就可以，这就是我们自己的一个修改过的镜像<br>
+[root@ansible ~]# docker commit -a=&quot;zhaoke&quot; -m=&quot;add webapps app&quot; 9f85f0e8b502 tomcat02:1.0</p>
+<p>学习方式说明:理解概念，但是一定要实践，最后实践和理论相结合一次搞定这个知识</p>
+<p>如果你想要保存当前容器的状态，就可以通过commit来提交，获得一个镜像，就好比我们以前学习的VM时候，快照！<br>
+到这里才算是入门Docker！<br>
+第4章 容器数据卷<br>
+4.1.1 什么是容器数据卷<br>
+docker的理念回顾<br>
+将应用和环境打包成一个镜像！<br>
+如果数据都在容器中，那么我们容易删除，数据就会丢失！ #需求：数据可以持久化<br>
+MySQL，容器删了，删库跑路！  							#需求：MySQL数据可以储存在本地<br>
+容器之间可以有一个数据共享的技术！docker容器中产生的数据，同步到本地！<br>
+这就是卷技术，目录的挂载，将我们容器内的目录挂载到Linux上面</p>
+<p>总结一句话：容器的持久化和同步操作！容器间也可以是数据共享的！</p>
+<p>4.1.2 使用数据卷<br>
+方式一：直接使用命令来挂载  -v<br>
+docker  run  -it  -v   主机目录:容器内目录</p>
+<p>#测试<br>
+[root@ansible ~]# docker run --name centos01 -it -v /home/lianxi:/home centos /bin/bash<br>
+#启动起来是我们可以通过docker  inspect  容器名称</p>
+<p>#测试数据同步<br>
+1、	停止容器<br>
+2、	宿主机上修改文件<br>
+3、	启动容器<br>
+4、	容器内的数据依旧是同步的</p>
+<p>好处:我们以后修改只需要在本地修改即可，容器内会自动同步！<br>
+4.1.3 实战安装MySQL<br>
+思考：MySQL的数据持久化问题<br>
+#获取镜像<br>
+[root@ansible ~]# docker pull mysql:5.7</p>
+<p>#运行容器，需要数据挂载！  #安装启动mysql，需要配置密码的，这是要注意点!<br>
+#官方测试，docker  run  --name some-mysql  -e  MYSQL_ROOT_PASSWORD=my-secret-pw  -d  mysql:tag</p>
+<p>#启动自己的<br>
+-d  后台运行<br>
+-p  端口映射<br>
+-v  卷挂载<br>
+-e  环境配置<br>
+--name   容器名字<br>
+[root@ansible ~]# docker run -d -p 3310:3305 --name=mysql01 -v /home/mysql/conf:/etc/mysql/conf.d -v /home/mysql/data:/var/lib/mysql -e MYSQL_ROOT_PASSWORD=123123 mysql:5.7</p>
+<p>#启动成功之后，我们在本地使用sqlyong连接测试一下</p>
+<p>4.1.4 具名和匿名挂载<br>
+#匿名挂载<br>
+-v	容器内路径！<br>
+[root@ansible ~]#docker run -d -P --name nginx02 -v /ect/nginx nginx</p>
+<p>#查看所有的volume的情况<br>
+[root@ansible ~]# docker volume ls<br>
+DRIVER    VOLUME NAME<br>
+local     4d135f25544b7002ab28f6c89f553cf27b13de14a67e2c5edfdd7c6b72af3b76<br>
+local     55aa9e0eaa1aba71435e8aafd4efa83c223424248a48948046740b8436f33f49</p>
+<p>#这里发现，这种就是匿名挂载，我们在  -v  只写了容器内的路径，没有写容器外的路径！</p>
+<p>#具名挂载<br>
+[root@ansible ~]# docker run  -d -P --name nginx03 -v juming-nginx:/etc/nginx nginx<br>
+8ceb39592038172a5c874bf8b6336257d525df88a735d4cbb51d6980ecd3d38f<br>
+[root@ansible ~]# docker volume ls<br>
+DRIVER    VOLUME NAME<br>
+local     4d135f25544b7002ab28f6c89f553cf27b13de14a67e2c5edfdd7c6b72af3b76<br>
+local     55aa9e0eaa1aba71435e8aafd4efa83c223424248a48948046740b8436f33f49<br>
+local     juming-nginx</p>
+<p>#通过  -v  卷名：容器内路径<br>
+#查看一下这个卷<br>
+[root@ansible ~]# docker volume inspect juming-nginx</p>
+<p>所有的docker容器内的卷，没有指定目录的情况下一般都是在/var/lib/docker/volumes/下<br>
+我们通过具名挂载就可以方便的找到我们的一个卷，大多数情况在使用的是具名挂载<br>
+#如何确定是具名挂载还是匿名挂载，还是指定路径挂载<br>
+-v  容器内路径			#匿名挂载<br>
+-v	卷名：容器内路径	#具名挂载<br>
+-v	/宿主机路径：容器内路径		#指定路径挂载<br>
+拓展<br>
+#通过 -v 容器内路径，ro    rw  改变读写权限<br>
+ro   readonly		#只读<br>
+rw	 readwrite		#可读可写</p>
+<p>#一旦这个设置了容器权限，容器对我们挂载出来的容器就有限定了！<br>
+[root@ansible _data]# docker run -d -P --name nginx04 -v junming-nginx:/etc/nginx:ro nginx<br>
+[root@ansible _data]# docker run -d -P --name nginx04 -v junming-nginx:/etc/nginx:rw nginx<br>
+#ro		只要看到ro就说明这个路径只能通过宿主机来操作，容器内部是无法操作</p>
+<p>4.1.5 初识Dockerfile<br>
+Dockerfile就是用来构建docker镜像的构建文件！命令脚本，先试一下<br>
+通过这个脚本可以生成镜像，镜像是一层一层的，脚本一个一个的命令，每个命令都是一层！<br>
+#测试<br>
+#创建一个dockerfile文件，名字可以随机，建议Dockerfile<br>
+#文件中的内容	指令（大写）	参数<br>
+[root@ansible docker-test-volume]# cat dockerfile1<br>
+FROM centos</p>
+<p>VOLUME [&quot;volume01&quot;,&quot;volume02&quot;]</p>
+<p>CMD echo &quot;----end----&quot;<br>
+CMD /bin/bash</p>
+<p>#这里的每个命令就是镜像的一层</p>
+<p>#启动自己的容器</p>
+<p>这个卷和外部一定有一个同步的目录！</p>
+<p>查看一下挂载的路径</p>
+<p>测试一下刚才的文件是否同步出去了！<br>
+这种方式我们未来使用的十分多，因为我们通常会构建自己的镜像！<br>
+假设构建镜像时没有挂载卷，要手动镜像挂载  -v 卷名：容器内路径！</p>
+<p>4.1.6 数据卷容器<br>
+多个MySQL同步数据！</p>
+<p>启动三个容器，通过我们刚才自己写的镜像启动的</p>
+<p>#测试，可以删除docker01，查看一下docker02和docker03是否还可以访问这个文件<br>
+#测试依旧可以访问</p>
+<p>多个MySQL实现数据共享<br>
+[root@c6635dd740f5 volume01]# docker run -d -p 3310:3306 -v /etc/mysql/cinf.d -v /var/lib/mysql -e MYSQL_ROOT_PASSWORD=123123 --name mysql01 mysql:5.7<br>
+[root@c6635dd740f5 volume01]# docker run -d -p 3310:3306 -e MYSQL_ROOT_PASSWORD=123123 --name mysql02 –volumes-from mysql01 mysql:5.7</p>
+<p>#这个时候，可以实现两个容器数据同步！</p>
+<p>结论：<br>
+容器之间配置信息的传递，数据卷容器的生命周期一致持续到没有容器使用为止。<br>
+但是一旦你持久化到了本地，这个时候，本地的数据是不会删除的！<br>
+第5章 Dockerfile<br>
+5.1.1 Dockerfile介绍<br>
+dockerfile是用来构建docker镜像的文件！命令参数脚本<br>
+构建步骤<br>
+1、	编写一个docker file文件<br>
+2、	docker	build构建成为一个镜像<br>
+3、	docker	run运行镜像<br>
+4、	docker	push发布镜像（DockrHub、阿里云镜像仓库！）<br>
+查看一下官方是怎么做的</p>
+<p>很多官方镜像都是基础包，很多功能都没有，我们通常会自己搭建自己的镜像<br>
+官方既然可以搭建镜像，我们自己也没问题<br>
+5.1.2 Dockerfile构建过程<br>
+基础知识：<br>
+1、	每个保留关键字（指令）都是必须是大写字母<br>
+2、	指令是从上到下顺序执行<br>
+3、	#	表示注释<br>
+4、	每一个指令都会创建提交！</p>
+<p>dockerfile是面向开发的，我们以后要发布项目，做镜像，就需要编写dockerfile文件，这个文件十分简单<br>
+docker镜像逐渐成为企业交付的标准，必须掌握！<br>
+步骤：开发，部署，运维。。。缺一不可！<br>
+DockerFile构建文件，定义了一切的步骤，源代码<br>
+DockerImages：通过DockerFile构建生成的镜像，最终发布和运行的产品。<br>
+Docker容器：容器就是镜像运行起来提供服务器</p>
+<p>5.1.3 docker的指令<br>
+之前都是使用其他人的，现在知道了这些指令后，自己练习制作一个镜像<br>
+FROM				#基础镜像，一切从这里开始构建centos<br>
+MAINTAINER			#镜像是谁写的，姓名+邮箱<br>
+RUN					#镜像构建的时候需要运行的命令<br>
+ADD					#步骤，tomcat镜像，这个tomcat压缩包！添加内容<br>
+WORKDIR				#镜像的工作目录<br>
+VOLUME				#设计一个容器卷，就是挂载的目录位置<br>
+EXPOSE				#暴露端口配置<br>
+CMD					#指定这个容器启动的时候要运行的命令，只有一个会生效，可被替代<br>
+ENTRYPOINT			#指定这个容器启动的时候要运行的命令，可以追加命令<br>
+ONBUILD				#当构建一个被继承Dockerfile这个时候就会运行ONBUILD的指令，触发指令<br>
+COPY				#类似ADD，将我们文件拷贝到镜像中<br>
+ENV					#构建的时候设置环境变量！</p>
+<p>5.1.4 实战测试<br>
+Docker  Hub中99%镜像都是从这个基础镜像过来的FROM scratch,然后配置需要的软件和配置来进行的创建</p>
+<p>创建一个自己的centos<br>
+#第一步，编写Dockerfile的文件</p>
+<p>#第二步，通过这个文件构建镜像<br>
+命令 docker  build  -f  dockerfile文件路径  -t  镜像名：[tag]<br>
+Successfully built bd95efb41428<br>
+Successfully tagged mycentos:0.1<br>
+#3、测试运行<br>
+对比之前的centos</p>
+<p>增加之后的镜像</p>
+<p>可以列出本地镜像的变更历史</p>
+<p>这样平时拿到一个镜像，可以研究一下它是怎么做的了<br>
+5.1.5 CMD和CNTRYPOINT的区别<br>
+CMD			#指定这个容器启动的时候要运行的命令，只有最后一个会生效，可被替代<br>
+ENTRYPOINT	#指定这个容器启动的时候要运行的命令，可以追加命令</p>
+<p>测试CMD<br>
+#编写dockerfile文件<br>
+[root@ansible dockerfile]# vim docker-cmd-test<br>
+FROM centos<br>
+CMD [&quot;ls&quot;,&quot;-a&quot;]<br>
+#构建镜像<br>
+[root@ansible dockerfile]# docker build -f docker-cmd-test -t cmdtest .<br>
+#run运行，发现ls  -a命令生效<br>
+[root@ansible dockerfile]# docker run a152bde80c10<br>
+.<br>
+..<br>
+.dockerenv<br>
+bin<br>
+dev<br>
+etc<br>
+home<br>
+lib<br>
+lib64<br>
+#想追加一个命令  -l   ls  -al<br>
+[root@ansible dockerfile]# docker run a152bde80c10 -l<br>
+docker: Error response from daemon: OCI runtime create failed: container_linux.go:370: starting container process caused: exec: &quot;-l&quot;: executable file not found in $PATH: unknown.<br>
+#CMD的情况下 -l  替换了CMD  [“ls”,”-a”]命令，-l不是命令所以报错。CMD会把之前的命令替换掉<br>
+测试ENTRYPOINT<br>
+#编写dockerfile文件<br>
+[root@ansible dockerfile]# vim docker-cmd-entrypoin<br>
+FROM centos<br>
+ENTRYPOINT [&quot;ls&quot;,&quot;-a&quot;]<br>
+#构建镜像<br>
+[root@ansible dockerfile]# docker build -f docker-cmd-entrypoin -t entrypoint-test .<br>
+#追加一个命令发现，是直接追加在ENTRYPOINT命令后面<br>
+[root@ansible dockerfile]# docker run e10772e30b78 -l<br>
+total 0<br>
+drwxr-xr-x   1 root root   6 Dec 16 03:18 .<br>
+drwxr-xr-x   1 root root   6 Dec 16 03:18 ..<br>
+-rwxr-xr-x   1 root root   0 Dec 16 03:18 .dockerenv<br>
+lrwxrwxrwx   1 root root   7 Nov  3 15:22 bin -&gt; usr/bin<br>
+drwxr-xr-x   5 root root 340 Dec 16 03:18 dev<br>
+drwxr-xr-x   1 root root  66 Dec 16 03:18 etc<br>
+drwxr-xr-x   2 root root   6 Nov  3 15:22 home<br>
+Dockerfile中很多命令都十分相似，我们需要了解他们的区别，我们最好的学习就是对比他们然后测试效果！<br>
+5.1.6 实战：tomcat镜像<br>
+1、	准备镜像文件tomcat压缩包，jdk的压缩包！</p>
+<p>2、	编写dockerfile文件，官方命名dockerfile，build会自动寻找这个文件，就不需要-f指定了<br>
+[root@ansible tomcat]# cat Dockerfile<br>
+FROM centos<br>
+MAINTAINER andi<a href="mailto:andidechuan@163.com">andidechuan@163.com</a></p>
+<p>COPY readme.txt /usr/local/readme.txt</p>
+<p>ADD jdk-8u60-linux-x64.tar.gz /usr/local/<br>
+ADD apache-tomcat-9.0.41.tar.gz /usr/local/</p>
+<p>RUN yum -y install vim</p>
+<p>ENV MYPATH /usr/local<br>
+WORKDIR $MYPATH</p>
+<p>ENV JAVA_HOME /usr/local/jdk1.8.0_60<br>
+ENV CLASSPATH <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>J</mi><mi>A</mi><mi>V</mi><msub><mi>A</mi><mi>H</mi></msub><mi>O</mi><mi>M</mi><mi>E</mi><mi mathvariant="normal">/</mi><mi>l</mi><mi>i</mi><mi>b</mi><mi mathvariant="normal">/</mi><mi>d</mi><mi>t</mi><mi mathvariant="normal">.</mi><mi>j</mi><mi>a</mi><mi>r</mi><mo>:</mo></mrow><annotation encoding="application/x-tex">JAVA_HOME/lib/dt.jar:</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathdefault" style="margin-right:0.09618em;">J</span><span class="mord mathdefault">A</span><span class="mord mathdefault" style="margin-right:0.22222em;">V</span><span class="mord"><span class="mord mathdefault">A</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.32833099999999993em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathdefault mtight" style="margin-right:0.08125em;">H</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mord mathdefault" style="margin-right:0.02778em;">O</span><span class="mord mathdefault" style="margin-right:0.10903em;">M</span><span class="mord mathdefault" style="margin-right:0.05764em;">E</span><span class="mord">/</span><span class="mord mathdefault" style="margin-right:0.01968em;">l</span><span class="mord mathdefault">i</span><span class="mord mathdefault">b</span><span class="mord">/</span><span class="mord mathdefault">d</span><span class="mord mathdefault">t</span><span class="mord">.</span><span class="mord mathdefault" style="margin-right:0.05724em;">j</span><span class="mord mathdefault">a</span><span class="mord mathdefault" style="margin-right:0.02778em;">r</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">:</span></span></span></span>JAVA_HOME/lib/tools.jar<br>
+ENV CATALINA_HOME /usr/local/apache-tomcat-9.0.41<br>
+ENV CATALINA_BASH /usr/local/apache-tomcat-9.0.41<br>
+ENV PATH <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>P</mi><mi>A</mi><mi>T</mi><mi>H</mi><mo>:</mo></mrow><annotation encoding="application/x-tex">PATH:</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathdefault" style="margin-right:0.13889em;">P</span><span class="mord mathdefault">A</span><span class="mord mathdefault" style="margin-right:0.13889em;">T</span><span class="mord mathdefault" style="margin-right:0.08125em;">H</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">:</span></span></span></span>JAVA_HOME/bin:<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>C</mi><mi>A</mi><mi>T</mi><mi>A</mi><mi>L</mi><mi>I</mi><mi>N</mi><msub><mi>A</mi><mi>H</mi></msub><mi>O</mi><mi>M</mi><mi>E</mi><mi mathvariant="normal">/</mi><mi>l</mi><mi>i</mi><mi>b</mi><mo>:</mo></mrow><annotation encoding="application/x-tex">CATALINA_HOME/lib:</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathdefault" style="margin-right:0.07153em;">C</span><span class="mord mathdefault">A</span><span class="mord mathdefault" style="margin-right:0.13889em;">T</span><span class="mord mathdefault">A</span><span class="mord mathdefault">L</span><span class="mord mathdefault" style="margin-right:0.07847em;">I</span><span class="mord mathdefault" style="margin-right:0.10903em;">N</span><span class="mord"><span class="mord mathdefault">A</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.32833099999999993em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathdefault mtight" style="margin-right:0.08125em;">H</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mord mathdefault" style="margin-right:0.02778em;">O</span><span class="mord mathdefault" style="margin-right:0.10903em;">M</span><span class="mord mathdefault" style="margin-right:0.05764em;">E</span><span class="mord">/</span><span class="mord mathdefault" style="margin-right:0.01968em;">l</span><span class="mord mathdefault">i</span><span class="mord mathdefault">b</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">:</span></span></span></span>CATALINA_HOME/bin</p>
+<p>EXPOSE 8080</p>
+<p>CMD /usr/local/apache-tomcat-9.0.41/bin/startup.sh &amp;&amp; tail -F /url/local/apache-tomcat-9.0.41/bin/logs/catalina.out<br>
+3、	构建镜像<br>
+#docker build -t zktomcat .<br>
+4、	启动镜像<br>
+5、	访问测试<br>
+6、	发布项目（由于做了卷挂载，我们直接在本地编写项目就可以发布了！）</p>
+<?xml version="1.0" encoding="UTF-8"?>
+<p><web-app xmlns="http://java.sun.com/xml/ns/javaee"
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
+                               http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+           version="2.5"></p>
+  </web-app>
+jsp
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>hello 赵科</title>
+</head>
+<body>
+Hello World!<br/>
+<%
+System.out.println(“----my test web logs----”);
+%>
+</body>
+</html>
+发现：项目部署成功，可以直接访问ok！
+<p>以后的开发步骤：需要掌握Dockerfile的编写！我们之后的一切都是使用docker镜像来发布运行！</p>
+<p>5.1.7 发布自己的镜像<br>
+Dockerhub<br>
+1、	地址https://hub.docker.com/注册自己的账号<br>
+2、	确定这个账号可以登录<br>
+3、	在服务器上提交自己的镜像<br>
+docker  login  -u 用户名  -p 密码<br>
+[root@ansible tomcat]# docker login -u 18730935776<br>
+Password:<br>
+WARNING! Your password will be stored unencrypted in /root/.docker/config.json.<br>
+Configure a credential helper to remove this warning. See<br>
+https://docs.docker.com/engine/reference/commandline/login/#credentials-store</p>
+<p>Login Succeeded<br>
+4、	登录完毕后就可以提交镜像了，就是一步docker  push<br>
+#push镜像的问题<br>
+[root@ansible tomcat]# docker push andi/zktomcat:0.1<br>
+The push refers to repository [docker.io/andi/zktomcat]<br>
+An image does not exist locally with the tag: andi/zktomcat<br>
+#解决，添一个tag<br>
+[root@ansible tomcat]# docker tag bd8499565efd 18730935776[必须要和自己的hub账号一样]/tomcat:1.0<br>
+#上传过程中发现一直连接超时，因为Hub网站是外网，所以在/etc/resolv.conf中添加一个8.8.8.8就可以了<br>
+Get https://registry-1.docker.io/v2/: dial tcp: lookup registry-1.docker.io on 8.8.8.8:53: read udp 192.168.2.101:40422-&gt;8.8.8.8:53: i/o timeout<br>
+#docker push上去即可！发布镜像时尽量带上版本号<br>
+[root@ansible ~]# docker push 18730935776/zktomcat:1.0</p>
+<p>提交的时候也是按照镜像的层级来进行提交的！<br>
+5.1.8 发布到阿里云镜像上<br>
+1、	登录到阿里云<br>
+2、	找到容器镜像服务<br>
+3、	创建命名空间</p>
+<p>4、	创建容器镜像</p>
+<p>5、	浏览</p>
+<p>阿里云容器上传参考官方文档就可以	<br>
+5.1.9 小结</p>
+<p>第6章 docker网络<br>
+6.1.1 理解docker0<br>
+第一步清空所有环境<br>
+测试</p>
+<p>三个网络<br>
+#问题，docker是如何处理容器网络访问的？</p>
+<p>#运行一个容器<br>
+[root@localhost ~]# docker run -d -P --name tomcat01 tomcat<br>
+#查看容器的内部网络地址 ip addr，发现容器启动的时候<br>
+[root@localhost ~]# docker exec -it tomcat01 ip addr<br>
+1: lo: &lt;LOOPBACK,UP,LOWER_UP&gt; mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000<br>
+link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00<br>
+inet 127.0.0.1/8 scope host lo<br>
+valid_lft forever preferred_lft forever<br>
+6: eth0@if7: &lt;BROADCAST,MULTICAST,UP,LOWER_UP&gt; mtu 1500 qdisc noqueue state UP group default<br>
+link/ether 02:42:ac:11:00:02 brd ff:ff:ff:ff:ff:ff link-netnsid 0<br>
+inet 172.17.0.2/16 brd 172.17.255.255 scope global eth0<br>
+valid_lft forever preferred_lft forever</p>
+<p>#通过ping命令查看linux能否联通容器内部<br>
+[root@localhost ~]# ping 172.17.0.2<br>
+PING 172.17.0.2 (172.17.0.2) 56(84) bytes of data.<br>
+64 bytes from 172.17.0.2: icmp_seq=1 ttl=64 time=0.447 ms<br>
+64 bytes from 172.17.0.2: icmp_seq=2 ttl=64 time=0.060 ms<br>
+原理<br>
+1、	我们每启动一个docker容器，docker就会给docker容器分配一个ip，我们只要安装了docker，就会有一个网卡docker0桥接模式，使用的技术是vethc -pair技术！<br>
+再次测试ip addr</p>
+<p>2、在启动了一个容器测试时，发现又多了一对网卡</p>
+<p>#我们发现这个容器带来网卡，都是一对对的</p>
+<h1 id="vethc-pair就是一堆的虚拟设备接口他们都是成对出现的一端连着协议一端彼此相连-3">vethc -pair就是一堆的虚拟设备接口，他们都是成对出现的，一端连着协议，一端彼此相连</h1>
+<p>#正因为有这个特性，vethc-pair充当一个桥梁，连接各州虚拟网络设备的<br>
+#OpenStac，Docker容器之间的连接，ovs的连接，都是使用vethc -pair技术<br>
+3、测试tomcat01和tomcat02是否可以ping通！<br>
+[root@localhost ~]# docker exec -it tomcat02 ping 172.17.0.2<br>
+#结论，容器和容器之间是可以互相ping通的！<br>
+如图一个网络模型图：</p>
+<p>结论：tomcat01和tomcat02是公用的一个路由器，docker0.<br>
+所有的容器不指定网络的情况下，都是docker0路由的，docker会给我们的容器分配一个默认的可用ip<br>
+小结<br>
+Docker使用的是Liunx 的桥接</p>
+<p>Docker中的所有网络接口都是虚拟的，虚拟的转发效率更高（内网传递文件！）<br>
+只要容器删除，对应网桥一对就没了！</p>
+<p>6.1.2 –link<br>
+思考一个场景，我们编写了一个微服务，database url=ip，项目不重启，数据库ip换掉了，我们希望可以梳理这个问题，可以用名字来进行访问容器？<br>
+[root@zhaoke ~]# docker exec -it tomcat02 ping tomcat01<br>
+ping: tomcat01: Name or service not known<br>
+#直接使用ping命令无法ping通，如何可以解决<br>
+#通过—link既可以解决了网络连通问题<br>
+[root@zhaoke ~]# docker run -d -P --name tomcat03 --link tomcat02 tomcat<br>
+[root@zhaoke ~]# docker exec -it tomcat03 ping tomcat02<br>
+PING tomcat02 (172.17.0.3) 56(84) bytes of data.<br>
+64 bytes from tomcat02 (172.17.0.3): icmp_seq=1 ttl=64 time=0.110 ms<br>
+64 bytes from tomcat02 (172.17.0.3): icmp_seq=2 ttl=64 time=0.130 ms<br>
+#反向无法ping通<br>
+[root@zhaoke ~]# docker exec -it tomcat02 ping tomcat03<br>
+ping: tomcat03: Name or service not known<br>
+探究：inspect</p>
+<p>其实这个tomcat03就是在本地配置了tomcat02的地址<br>
+#查看hosts配置，在这里原理发现<br>
+[root@zhaoke ~]# docker exec -it tomcat03 cat /etc/hosts<br>
+127.0.0.1	localhost<br>
+::1	localhost ip6-localhost ip6-loopback<br>
+fe00::0	ip6-localnet<br>
+ff00::0	ip6-mcastprefix<br>
+ff02::1	ip6-allnodes<br>
+ff02::2	ip6-allrouters<br>
+172.17.0.3	tomcat02 ec420d642219<br>
+172.17.0.4	c97b9380df41<br>
+本质探究：--link就是我们在hosts配置中增加了一个172.18.0.3 tomcat02 IP地址<br>
+我们现在使用Docker已经不建议使用—link了！<br>
+自定义网络！不适用docker0！<br>
+docker0问题：它不支持容器连接访问！<br>
+6.1.3 自定义网络</p>
+<p>Docker</p>
+<p>作者：赵科<br>
+归档：学习笔记<br>
+2020/8/30</p>
+<ol>
+<li>目录<br>
+第1章 常用命令	2<br>
+1.1.1 docker介绍	2<br>
+1.1.2 安装Docker	2<br>
+1.1.3 帮助命令	3<br>
+1.1.4 镜像命令	3<br>
+1.1.5 容器命令	4<br>
+1.1.6 常用其他命令	5<br>
+1.1.7 命令小结	6<br>
+第2章 部署服务	7<br>
+2.1.1 部署Nginx	7<br>
+2.1.2 部署tomcat	8<br>
+2.1.3 部署es+kibana	8<br>
+2.1.4 部署可视化	9<br>
+第3章 Docker镜像讲解	10<br>
+3.1.1 镜像是什么	10<br>
+3.1.2 Docker镜像加载原理	11<br>
+3.1.3 理解	12<br>
+3.1.4 commit镜像	14<br>
+第4章 容器数据卷	14<br>
+4.1.1 什么是容器数据卷	14<br>
+4.1.2 使用数据卷	15<br>
+4.1.3 实战安装MySQL	16<br>
+4.1.4 具名和匿名挂载	16<br>
+4.1.5 初识Dockerfile	18<br>
+4.1.6 数据卷容器	20<br>
+第5章 Dockerfile	22<br>
+5.1.1 Dockerfile介绍	22<br>
+5.1.2 Dockerfile构建过程	23<br>
+5.1.3 docker的指令	24<br>
+5.1.4 实战测试	24<br>
+5.1.5 CMD和CNTRYPOINT的区别	26<br>
+5.1.6 实战：tomcat镜像	28<br>
+5.1.7 发布自己的镜像	29<br>
+5.1.8 发布到阿里云镜像上	30</li>
+</ol>
+<p>第1章 常用命令<br>
+1.1.1 docker介绍<br>
+docker的三大核心组件	镜像	容器	仓库<br>
+镜像存放在仓库中，启动后变为容器<br>
+1.1.2 安装Docker<br>
+登录https://docs.docker.com/get-docker/选择版本进行下载<br>
+如果系统内已有Docker需要先进行卸载<br>
+yum remove docker <br>
+docker-client <br>
+docker-client-latest <br>
+docker-common <br>
+docker-latest <br>
+docker-latest-logrotate <br>
+docker-logrotate <br>
+docker-engine<br>
+安装需要的安装包<br>
+yum install -y yum-utils</p>
+<h1 id="设置镜像的仓库-4">设置镜像的仓库</h1>
+<p>yum-config-manager <br>
+--add-repo <br>
+https://download.docker.com/linux/centos/docker-ce.repo			#默认是国外的<br>
+yum-config-manager <br>
+--add-repo <br>
+https://m2uqq1c2.mirror.aliyuncs.com					  #建议用阿里云的<br>
+#更新yum软件包索引<br>
+yum	makecache  fast<br>
+#安装docker相关的内容		docker-ce	社区版	ee企业版<br>
+yum install docker-ce docker-ce-cli containerd.io<br>
+#启动docker<br>
+systemctl  start  docker<br>
+docker	version  #查看是否安装成功和版本信息<br>
+#测试hello-world<br>
+docker	run	hello-world<br>
+阿里云镜像加速<br>
+登录阿里云</p>
+<p>配置加速<br>
+sudo mkdir -p /etc/docker<br>
+sudo tee /etc/docker/daemon.json &lt;&lt;-'EOF'<br>
+{<br>
+&quot;registry-mirrors&quot;: [&quot;https://m2uqq1c2.mirror.aliyuncs.com&quot;]<br>
+}<br>
+EOF<br>
+sudo systemctl daemon-reload<br>
+sudo systemctl restart docker<br>
+成功！<br>
+1.1.3 帮助命令<br>
+docker	version		#docker的详细信息<br>
+docker	info			#显示docker的系统信息<br>
+docker	命令 –help	#帮助命令<br>
+1.1.4 镜像命令<br>
+docker images		#查看所有本地的主机上的镜像<br>
+[root@localhost ~]# docker images		#查看所有本地的主机上的镜像<br>
+REPOSITORY          TAG                 IMAGE ID            CREATED             SIZE</p>
+<p>#解释<br>
+REPOSITORY	镜像的仓库源<br>
+TAG			镜像的标签<br>
+IMAGE ID		镜像的ID<br>
+CREATED		镜像的创建时间<br>
+SIZE			镜像的大小<br>
+#可选项<br>
+-a, --all			列出所有镜像<br>
+-q, --quiet		只显示镜像ID</p>
+<p>docker	search	搜索镜像<br>
+docker	search	[镜像名称]<br>
+#可选项，通过收藏来过滤<br>
+--filter=STARS=3000		搜出来的镜像就是STARS大于3000的</p>
+<p>docker	pull		下载镜像<br>
+docker 	pull [镜像名称]<br>
+docker 	pull [镜像名称]:[版本号]</p>
+<p>1.1.5 容器命令<br>
+说明：我们有了镜像才可以创建容器，linux，下载一个centos镜像来测试<br>
+docker	pull	 centos<br>
+新建容器并启动<br>
+docker	run	 [可选参数] images<br>
+#参数说明<br>
+--name=”Name”		#容器名字	tomcat01	tomcat02,用来区分容器<br>
+-d					后台方式运行<br>
+-it					使用交互方式运行，进入容器产看内容<br>
+-p					指定容器的端口 -p	8080:8080		主机端口:容器端口<br>
+-P					随机指定端口<br>
+#测试	启动并进入容器<br>
+[root@localhost ~]# docker run -it centos /bin/bash<br>
+[root@8a1f989ad7da /]# ls		#查看容器内的centos，基础版本，很多命令都是不完善的！<br>
+bin  dev  etc  home  lib  lib64  lost+found  media  mnt  opt  proc  root  run  sbin  srv  sys  tmp  usr  var<br>
+[root@8a1f989ad7da /]# exit		#从容器中退回主机<br>
+exit<br>
+列出所有的运行的容器<br>
+#docker	ps	命令	<br>
+-a		#列出当先正在运行的容器，带出历史运行过的容器<br>
+-n=？	#显示最近创建的容器<br>
+-q		#只显示容器的编号<br>
+[root@localhost ~]# docker ps<br>
+CONTAINER ID        IMAGE               COMMAND             CREATED             STATUS              PORTS               NAMES<br>
+[root@localhost ~]# docker ps -a<br>
+CONTAINER ID        IMAGE               COMMAND             CREATED             STATUS                      PORTS               NAMES<br>
+8a1f989ad7da        centos              &quot;/bin/bash&quot;         29 minutes ago      Exited (0) 53 seconds ago                       kind_khorana<br>
+[root@localhost ~]# docker ps -aq<br>
+8a1f989ad7da<br>
+退出容器<br>
+exit		#直接停止并退出容器<br>
+crl + P + Q	#容器不停止退出<br>
+进入后台运行的容器<br>
+docker	exec  -it  容器名  /bin/bash<br>
+删除镜像<br>
+docker	rmi	-f	[镜像ID]					#删除镜像<br>
+docker	rmi	-f	$(docker  images  -aq)		#删除所有镜像<br>
+docker	ps	-a|xargs	docker	rm				#删除所有镜像<br>
+启动和停止容器<br>
+docker	start	  	容器id		#启动容器<br>
+docker	restart 	容器id		#重启容器<br>
+docker	stop		容器id		#停止当前正在运行的容器	<br>
+docker	kill		容器id		#强制停止当前容器<br>
+1.1.6 常用其他命令<br>
+后台启动容器<br>
+docker	run	-d	镜像名<br>
+[root@localhost ~]# docker run -d centos<br>
+#问题docker	ps，发现centos停止了<br>
+#常见的坑，docker容器使用后台运行，就必须要有一个前台进程，docker发现没有应用，就会自动停止<br>
+#nginx，容器启动后，发现自己没有提供服务，就会立即停止，就没有程序了<br>
+查看日志<br>
+docker	logs -f -t容器	#没有日志<br>
+#自己编写一段shell脚本<br>
+[root@localhost ~]# docker run -d centos /bin/sh -c &quot;while true;do echo zhaoke;sleep 1;done&quot;<br>
+#显示日志<br>
+-tf				#显示日志<br>
+--tail number		#显示日志的条数<br>
+[root@localhost ~]# docker logs -t -f --tail 10 65f64c8eaa95<br>
+查看容器中的进程信息ps<br>
+top命令		#docker	top	容器id<br>
+[root@localhost ~]# docker top 65f64c8eaa95<br>
+UID                 PID                 PPID                C                   STIME               TTY                 TIME                CMD<br>
+root                13324               13307               0                   19:48               ?                   00:00:01            /bin/sh -c while true;do echo zhaoke;sleep 1;done<br>
+查看镜像的元数据<br>
+#命令<br>
+docker	inspect	容器id<br>
+进入当前正在运行的容器<br>
+#我们通常使用容器都是后台方式运行的，需要进入容器，修改一些配置<br>
+#命令<br>
+方式一:docker	exec  -it	容器id  /bin/bash   #进入容器开启一个新的终端，可以再里面操作<br>
+方式二:docker	attach	容器id					 #进入容器正在执行的终端，不会启动新的进程<br>
+从容器内拷贝文件<br>
+docker	cp	容器id:容器内路径	 目的的主机路径<br>
+#可以将容器内的文件传输到主机上<br>
+将镜像导出<br>
+docker	save  -o  镜像名.tar.gz  镜像名:版本号<br>
+镜像导入<br>
+docker  load  &lt;  镜像名.tar.gz<br>
+1.1.7 命令小结</p>
+<p>第2章 部署服务<br>
+2.1.1 部署Nginx<br>
+docker search nginx	#先搜索nginx镜像	可以看到帮助文档<br>
+docker pull	nginx	#下载nginx<br>
+#运行测试<br>
+[root@ansible ~]# docker run -d --name nginx01 -p 3344:80 nginx<br>
+b95261d58d6475885235b7e23033aea2399c7086a8cfb85396faaa37bff76772<br>
+#-d	后台运行	#--name	给容器命名	  #-p 宿主机端口:容器内部端口<br>
+[root@ansible ~]# curl localhost:3344		#curl一下看看启动成功了没<br>
+端口暴露</p>
+<p>2.1.2 部署tomcat<br>
+#官方的使用<br>
+docker  run  -it  --rm  tomcat:9.0<br>
+#之前的启动都是后台，停止了容器之后，容器还是可以查到 docker run  -it  --rm，一般用来测试，用完删除</p>
+<p>#下载tomcat<br>
+docker  pull  tomcat<br>
+#启动运行<br>
+docker  run  -d  -p 3355:8080  --name  tomcat01  tomcat<br>
+#测试访问没有问题<br>
+[root@ansible ~]# docker run -d -p 3355:8080 --name tomcat01 tomcat<br>
+492a0a69089a6a80dccc326b5648e832b9787d5a390d62a9f7127a9aa370e905<br>
+[root@ansible ~]# docker exec -it tomcat01 /bin/bash<br>
+#发现问题，1、linux命令变少；2、没有webapps。是因为阿里云镜像的原因，默认是最小镜像，所以不必要的都剔除掉，保证最小可运行的环境<br>
+#进入tomcat中将webapps.dist/*中的东西全部放进webapps中就跟正常安装的一样了<br>
+思考问题：如果以后部署项目，如果每次都要进入容器会十分麻烦，可以在容器外部提供一个映射路径，webapps，我们在外部翻翻杂志项目，就自动同步到内部就好了！<br>
+2.1.3 部署es+kibana<br>
+#es	暴露的端口很多<br>
+#es 特别的耗内存<br>
+#es 的数据一般需要防止到安全目录！挂载</p>
+<h1 id="-net-somenetwork-网络配置-4">--net  somenetwork ?  网络配置</h1>
+<p>#启动elasticsearch	<br>
+docker run -d --name elasticsearch --net somenetwork -p 9200:9200 -p 9300:9300 -e &quot;discovery.type=single-node&quot; elasticsearch:7.6.2<br>
+#启动之后，linux会变卡顿	<br>
+docker  stats  查看cpu的状态<br>
+#测试es是否成功<br>
+#关闭es，增加对他的内存限制，修改配置文件 -e 环境配置修改<br>
+docker run -d --name elasticsearch04 -p 9200:9200 -p 9300:9300 -e &quot;discovery.type=single-node&quot; -e ES_JAVA_OPTS=&quot;-Xms64m -Xmx512m&quot; elasticsearch:7.6.2<br>
+作业：使用kibana连接es？思考网络如何才能连接过去</p>
+<p>2.1.4 部署可视化<br>
+portainer		#刚开始先用这个<br>
+Rancher			#CI/CD再用</p>
+<p>什么是portainer?<br>
+Docker图形化界面管理工具！提供一个后台面板供我们操作！<br>
+#安装命令<br>
+docker  run  -d  -p  8088:9000 <br>
+--restart=always -v /var/run/docker.sock:/var/run/docker.sock --privileged=true portainer/portainer<br>
+#方式，-v 挂载  最后授权</p>
+<p>#访问测试  IP地址:端口号<br>
+#设置一个密码</p>
+<p>#选择本地</p>
+<p>#进入成功</p>
+<p>一般平时不会使用，玩玩就行<br>
+第3章 Docker镜像讲解<br>
+3.1.1 镜像是什么<br>
+镜像是一种轻量级、可执行的独立软件包，用来打包软件运行环境和基于运行开发的软件，它包含运行某个软件所需的所有内容，包括代码、运行时、库、环境变量和配置文件。<br>
+如何得到镜像<br>
+1、	远程仓库下载<br>
+2、	同事拷贝<br>
+3、	自己制作<br>
+3.1.2 Docker镜像加载原理<br>
+UnionFS（联合文件系统）<br>
+UnionFS（联合文件系统）：UnionFS是一种分层、轻量级并且高性能的文件系统，它支持对文件系统的修改作为一次提交来一层层的叠加，同时可以将不同目录挂载到同一个虚拟文件系统下。Union文件系统是Docker镜像的基础。镜像可以通过分层来进行继承，基于基础镜像（没有父镜像），可以制作各种具体的应用镜像。</p>
+<p>特性：一次同时加载多个文件系统，但从外面看起来只能看到一个文件系统，联合加载会把各层文件系统叠加起来，这样最终的文件系统会包含所有底层的文件和目录</p>
+<p>Docker镜像加载原理<br>
+docker的镜像实际上由一层一层的文件系统组成，这种层级的文件系统UnionFS。</p>
+<p>bootfs（boot file system）主要包含bootloader和kernel，bootloader主要是引导加载kernel，linux刚启动是会加载bootfs文件系统,在Docker镜像的最底层是boots。这是一层与我们典型的linux/Unix系统是一样的，包含boot加速器和内核。当boot加载完成之后整个内核都在内存中了，此时内存的使用权已有bootfs转交给内核，此时系统也会卸载bootfs。</p>
+<p>roottfs（boot file system），在bootfs之上。包含的就是典型Linux系统中的/dev，/proc，/bin，/etc等标准目录和文件。rootfs就是各种不同的操作系统发行版，比如Ubuntu，Centos等等。</p>
+<p>平时我们安装虚拟机的Centos都是还几个G，为什么Docker这里才200M</p>
+<p>对于一个精简的OS，rootfs可以很小，只需要包含最基本的命令，工具和持续库就可以了，因为底层直接用Host的kernel，自己只需要提供rootfs就可以了，由此可见对于不同的Linux发行版，bootfs基本是一致的，rootfs会有差别，因此不同的发行版可以公用bootfs。<br>
+虚拟机时分钟级别，容器是秒级<br>
+分层理解<br>
+分层的镜像<br>
+我们可以下载一个镜像，主已观察下载的日志输入，可以看到是一层一层的在下载！</p>
+<p>思考，为什么Docker镜像要采用这种分层的结构呢？<br>
+最大的好处，就是资源共享了！比如有多个镜像都从相同的Base镜像构建而来，那么宿主机只需要在磁盘上保留一份Base镜像，同时内存中也只需要加载一份base镜像，这样就可以为所有的容器服务了，而且镜像的每一层都可以被共享。</p>
+<p>查看镜像分层的方式可以通过docker	inage	inspect命令！<br>
+[root@ansible ~]# docker image inspect redis:latest<br>
+3.1.3 理解<br>
+所有的Docker镜像都期时与一个基础镜像层，当进行修改或增加新的内容时，就会在当前镜像层之上，创建新的镜像层。<br>
+举个简单的例子，假如基于Ubuntu Linux 16.04 创建一个新的镜像，这就是新镜像的第一层；如果在该镜像中添加python包，就会在基础镜像层之上创建第二个镜像层；如果继续添加一个安全补丁，就会创建第三个镜像层。<br>
+该镜像当前已经包含了3个镜像层，如下图所示（这只是用于演示的很简单的例子）。</p>
+<p>添加额外的镜像层的同时，镜像始终保持时点给钱所有镜像的组合，理解这一点非常重要。下图中举了一个简单的列子，每个镜像层包含三个文件，而镜像包含了来自两个镜像层的6个文件。</p>
+<p>上图中的镜像层跟之前图中的略有区别，主要目的时便于展示文件。<br>
+下图中展示了一个稍微复杂的三层镜像，在外部看来整个镜像只有6个文件，这是因为最上层中的文件7是文件5的一个更新版。</p>
+<p>这种情况下，上层镜像层中的文件覆盖了底层镜像层中的文件，这样使得文件的更新版本作为一个新景象层添加到镜像当中。Docker通过储存引擎（新版本采用快照机制）的方式来实现镜像层<br>
+堆栈，并保证多镜像层对外展示为统一的文件系统。Linux上可用的储存引擎有AUF5、Overlay2、DeviceMapper、Btrfs以及ZFS，顾名思义，每种储存引擎都是基于Linux中对应的文件系统或者块设备技术，并且每种储存引擎都有其独有的性能特点。<br>
+Docekr在Windows上仅支持windowsfilter一种储存引擎，该引擎基于NFS文件系统之上实现了分层和cow。<br>
+下图展示了与系统显示相同的三层镜像，所有镜像层堆镜并合并，对外提供统一的视图。</p>
+<p>特点<br>
+Docker镜像都是只读的，当容器启动时，一个新的可用层被加载到镜像的顶部！这一层就是我们通常说的容器层，容器之下的都叫镜像层！</p>
+<p>3.1.4 commit镜像<br>
+docker  commit  #提交容器成为一个新的副本<br>
+#命令和git原理类似<br>
+docker  commit  -m=“提交的描述信息” -a=“作者” 容器ID  目标镜像名:[TAG]<br>
+实战测试<br>
+#启动一个默认的tomcat<br>
+#并将webapps.dist/*复制到webapps中<br>
+#将修改后的容器通过commit提交为一个镜像！以后就可以使用修改过的镜像就可以，这就是我们自己的一个修改过的镜像<br>
+[root@ansible ~]# docker commit -a=&quot;zhaoke&quot; -m=&quot;add webapps app&quot; 9f85f0e8b502 tomcat02:1.0</p>
+<p>学习方式说明:理解概念，但是一定要实践，最后实践和理论相结合一次搞定这个知识</p>
+<p>如果你想要保存当前容器的状态，就可以通过commit来提交，获得一个镜像，就好比我们以前学习的VM时候，快照！<br>
+到这里才算是入门Docker！<br>
+第4章 容器数据卷<br>
+4.1.1 什么是容器数据卷<br>
+docker的理念回顾<br>
+将应用和环境打包成一个镜像！<br>
+如果数据都在容器中，那么我们容易删除，数据就会丢失！ #需求：数据可以持久化<br>
+MySQL，容器删了，删库跑路！  							#需求：MySQL数据可以储存在本地<br>
+容器之间可以有一个数据共享的技术！docker容器中产生的数据，同步到本地！<br>
+这就是卷技术，目录的挂载，将我们容器内的目录挂载到Linux上面</p>
+<p>总结一句话：容器的持久化和同步操作！容器间也可以是数据共享的！</p>
+<p>4.1.2 使用数据卷<br>
+方式一：直接使用命令来挂载  -v<br>
+docker  run  -it  -v   主机目录:容器内目录</p>
+<p>#测试<br>
+[root@ansible ~]# docker run --name centos01 -it -v /home/lianxi:/home centos /bin/bash<br>
+#启动起来是我们可以通过docker  inspect  容器名称</p>
+<p>#测试数据同步<br>
+1、	停止容器<br>
+2、	宿主机上修改文件<br>
+3、	启动容器<br>
+4、	容器内的数据依旧是同步的</p>
+<p>好处:我们以后修改只需要在本地修改即可，容器内会自动同步！<br>
+4.1.3 实战安装MySQL<br>
+思考：MySQL的数据持久化问题<br>
+#获取镜像<br>
+[root@ansible ~]# docker pull mysql:5.7</p>
+<p>#运行容器，需要数据挂载！  #安装启动mysql，需要配置密码的，这是要注意点!<br>
+#官方测试，docker  run  --name some-mysql  -e  MYSQL_ROOT_PASSWORD=my-secret-pw  -d  mysql:tag</p>
+<p>#启动自己的<br>
+-d  后台运行<br>
+-p  端口映射<br>
+-v  卷挂载<br>
+-e  环境配置<br>
+--name   容器名字<br>
+[root@ansible ~]# docker run -d -p 3310:3305 --name=mysql01 -v /home/mysql/conf:/etc/mysql/conf.d -v /home/mysql/data:/var/lib/mysql -e MYSQL_ROOT_PASSWORD=123123 mysql:5.7</p>
+<p>#启动成功之后，我们在本地使用sqlyong连接测试一下</p>
+<p>4.1.4 具名和匿名挂载<br>
+#匿名挂载<br>
+-v	容器内路径！<br>
+[root@ansible ~]#docker run -d -P --name nginx02 -v /ect/nginx nginx</p>
+<p>#查看所有的volume的情况<br>
+[root@ansible ~]# docker volume ls<br>
+DRIVER    VOLUME NAME<br>
+local     4d135f25544b7002ab28f6c89f553cf27b13de14a67e2c5edfdd7c6b72af3b76<br>
+local     55aa9e0eaa1aba71435e8aafd4efa83c223424248a48948046740b8436f33f49</p>
+<p>#这里发现，这种就是匿名挂载，我们在  -v  只写了容器内的路径，没有写容器外的路径！</p>
+<p>#具名挂载<br>
+[root@ansible ~]# docker run  -d -P --name nginx03 -v juming-nginx:/etc/nginx nginx<br>
+8ceb39592038172a5c874bf8b6336257d525df88a735d4cbb51d6980ecd3d38f<br>
+[root@ansible ~]# docker volume ls<br>
+DRIVER    VOLUME NAME<br>
+local     4d135f25544b7002ab28f6c89f553cf27b13de14a67e2c5edfdd7c6b72af3b76<br>
+local     55aa9e0eaa1aba71435e8aafd4efa83c223424248a48948046740b8436f33f49<br>
+local     juming-nginx</p>
+<p>#通过  -v  卷名：容器内路径<br>
+#查看一下这个卷<br>
+[root@ansible ~]# docker volume inspect juming-nginx</p>
+<p>所有的docker容器内的卷，没有指定目录的情况下一般都是在/var/lib/docker/volumes/下<br>
+我们通过具名挂载就可以方便的找到我们的一个卷，大多数情况在使用的是具名挂载<br>
+#如何确定是具名挂载还是匿名挂载，还是指定路径挂载<br>
+-v  容器内路径			#匿名挂载<br>
+-v	卷名：容器内路径	#具名挂载<br>
+-v	/宿主机路径：容器内路径		#指定路径挂载<br>
+拓展<br>
+#通过 -v 容器内路径，ro    rw  改变读写权限<br>
+ro   readonly		#只读<br>
+rw	 readwrite		#可读可写</p>
+<p>#一旦这个设置了容器权限，容器对我们挂载出来的容器就有限定了！<br>
+[root@ansible _data]# docker run -d -P --name nginx04 -v junming-nginx:/etc/nginx:ro nginx<br>
+[root@ansible _data]# docker run -d -P --name nginx04 -v junming-nginx:/etc/nginx:rw nginx<br>
+#ro		只要看到ro就说明这个路径只能通过宿主机来操作，容器内部是无法操作</p>
+<p>4.1.5 初识Dockerfile<br>
+Dockerfile就是用来构建docker镜像的构建文件！命令脚本，先试一下<br>
+通过这个脚本可以生成镜像，镜像是一层一层的，脚本一个一个的命令，每个命令都是一层！<br>
+#测试<br>
+#创建一个dockerfile文件，名字可以随机，建议Dockerfile<br>
+#文件中的内容	指令（大写）	参数<br>
+[root@ansible docker-test-volume]# cat dockerfile1<br>
+FROM centos</p>
+<p>VOLUME [&quot;volume01&quot;,&quot;volume02&quot;]</p>
+<p>CMD echo &quot;----end----&quot;<br>
+CMD /bin/bash</p>
+<p>#这里的每个命令就是镜像的一层</p>
+<p>#启动自己的容器</p>
+<p>这个卷和外部一定有一个同步的目录！</p>
+<p>查看一下挂载的路径</p>
+<p>测试一下刚才的文件是否同步出去了！<br>
+这种方式我们未来使用的十分多，因为我们通常会构建自己的镜像！<br>
+假设构建镜像时没有挂载卷，要手动镜像挂载  -v 卷名：容器内路径！</p>
+<p>4.1.6 数据卷容器<br>
+多个MySQL同步数据！</p>
+<p>启动三个容器，通过我们刚才自己写的镜像启动的</p>
+<p>#测试，可以删除docker01，查看一下docker02和docker03是否还可以访问这个文件<br>
+#测试依旧可以访问</p>
+<p>多个MySQL实现数据共享<br>
+[root@c6635dd740f5 volume01]# docker run -d -p 3310:3306 -v /etc/mysql/cinf.d -v /var/lib/mysql -e MYSQL_ROOT_PASSWORD=123123 --name mysql01 mysql:5.7<br>
+[root@c6635dd740f5 volume01]# docker run -d -p 3310:3306 -e MYSQL_ROOT_PASSWORD=123123 --name mysql02 –volumes-from mysql01 mysql:5.7</p>
+<p>#这个时候，可以实现两个容器数据同步！</p>
+<p>结论：<br>
+容器之间配置信息的传递，数据卷容器的生命周期一致持续到没有容器使用为止。<br>
+但是一旦你持久化到了本地，这个时候，本地的数据是不会删除的！<br>
+第5章 Dockerfile<br>
+5.1.1 Dockerfile介绍<br>
+dockerfile是用来构建docker镜像的文件！命令参数脚本<br>
+构建步骤<br>
+1、	编写一个docker file文件<br>
+2、	docker	build构建成为一个镜像<br>
+3、	docker	run运行镜像<br>
+4、	docker	push发布镜像（DockrHub、阿里云镜像仓库！）<br>
+查看一下官方是怎么做的</p>
+<p>很多官方镜像都是基础包，很多功能都没有，我们通常会自己搭建自己的镜像<br>
+官方既然可以搭建镜像，我们自己也没问题<br>
+5.1.2 Dockerfile构建过程<br>
+基础知识：<br>
+1、	每个保留关键字（指令）都是必须是大写字母<br>
+2、	指令是从上到下顺序执行<br>
+3、	#	表示注释<br>
+4、	每一个指令都会创建提交！</p>
+<p>dockerfile是面向开发的，我们以后要发布项目，做镜像，就需要编写dockerfile文件，这个文件十分简单<br>
+docker镜像逐渐成为企业交付的标准，必须掌握！<br>
+步骤：开发，部署，运维。。。缺一不可！<br>
+DockerFile构建文件，定义了一切的步骤，源代码<br>
+DockerImages：通过DockerFile构建生成的镜像，最终发布和运行的产品。<br>
+Docker容器：容器就是镜像运行起来提供服务器</p>
+<p>5.1.3 docker的指令<br>
+之前都是使用其他人的，现在知道了这些指令后，自己练习制作一个镜像<br>
+FROM				#基础镜像，一切从这里开始构建centos<br>
+MAINTAINER			#镜像是谁写的，姓名+邮箱<br>
+RUN					#镜像构建的时候需要运行的命令<br>
+ADD					#步骤，tomcat镜像，这个tomcat压缩包！添加内容<br>
+WORKDIR				#镜像的工作目录<br>
+VOLUME				#设计一个容器卷，就是挂载的目录位置<br>
+EXPOSE				#暴露端口配置<br>
+CMD					#指定这个容器启动的时候要运行的命令，只有一个会生效，可被替代<br>
+ENTRYPOINT			#指定这个容器启动的时候要运行的命令，可以追加命令<br>
+ONBUILD				#当构建一个被继承Dockerfile这个时候就会运行ONBUILD的指令，触发指令<br>
+COPY				#类似ADD，将我们文件拷贝到镜像中<br>
+ENV					#构建的时候设置环境变量！</p>
+<p>5.1.4 实战测试<br>
+Docker  Hub中99%镜像都是从这个基础镜像过来的FROM scratch,然后配置需要的软件和配置来进行的创建</p>
+<p>创建一个自己的centos<br>
+#第一步，编写Dockerfile的文件</p>
+<p>#第二步，通过这个文件构建镜像<br>
+命令 docker  build  -f  dockerfile文件路径  -t  镜像名：[tag]<br>
+Successfully built bd95efb41428<br>
+Successfully tagged mycentos:0.1<br>
+#3、测试运行<br>
+对比之前的centos</p>
+<p>增加之后的镜像</p>
+<p>可以列出本地镜像的变更历史</p>
+<p>这样平时拿到一个镜像，可以研究一下它是怎么做的了<br>
+5.1.5 CMD和CNTRYPOINT的区别<br>
+CMD			#指定这个容器启动的时候要运行的命令，只有最后一个会生效，可被替代<br>
+ENTRYPOINT	#指定这个容器启动的时候要运行的命令，可以追加命令</p>
+<p>测试CMD<br>
+#编写dockerfile文件<br>
+[root@ansible dockerfile]# vim docker-cmd-test<br>
+FROM centos<br>
+CMD [&quot;ls&quot;,&quot;-a&quot;]<br>
+#构建镜像<br>
+[root@ansible dockerfile]# docker build -f docker-cmd-test -t cmdtest .<br>
+#run运行，发现ls  -a命令生效<br>
+[root@ansible dockerfile]# docker run a152bde80c10<br>
+.<br>
+..<br>
+.dockerenv<br>
+bin<br>
+dev<br>
+etc<br>
+home<br>
+lib<br>
+lib64<br>
+#想追加一个命令  -l   ls  -al<br>
+[root@ansible dockerfile]# docker run a152bde80c10 -l<br>
+docker: Error response from daemon: OCI runtime create failed: container_linux.go:370: starting container process caused: exec: &quot;-l&quot;: executable file not found in $PATH: unknown.<br>
+#CMD的情况下 -l  替换了CMD  [“ls”,”-a”]命令，-l不是命令所以报错。CMD会把之前的命令替换掉<br>
+测试ENTRYPOINT<br>
+#编写dockerfile文件<br>
+[root@ansible dockerfile]# vim docker-cmd-entrypoin<br>
+FROM centos<br>
+ENTRYPOINT [&quot;ls&quot;,&quot;-a&quot;]<br>
+#构建镜像<br>
+[root@ansible dockerfile]# docker build -f docker-cmd-entrypoin -t entrypoint-test .<br>
+#追加一个命令发现，是直接追加在ENTRYPOINT命令后面<br>
+[root@ansible dockerfile]# docker run e10772e30b78 -l<br>
+total 0<br>
+drwxr-xr-x   1 root root   6 Dec 16 03:18 .<br>
+drwxr-xr-x   1 root root   6 Dec 16 03:18 ..<br>
+-rwxr-xr-x   1 root root   0 Dec 16 03:18 .dockerenv<br>
+lrwxrwxrwx   1 root root   7 Nov  3 15:22 bin -&gt; usr/bin<br>
+drwxr-xr-x   5 root root 340 Dec 16 03:18 dev<br>
+drwxr-xr-x   1 root root  66 Dec 16 03:18 etc<br>
+drwxr-xr-x   2 root root   6 Nov  3 15:22 home<br>
+Dockerfile中很多命令都十分相似，我们需要了解他们的区别，我们最好的学习就是对比他们然后测试效果！<br>
+5.1.6 实战：tomcat镜像<br>
+1、	准备镜像文件tomcat压缩包，jdk的压缩包！</p>
+<p>2、	编写dockerfile文件，官方命名dockerfile，build会自动寻找这个文件，就不需要-f指定了<br>
+[root@ansible tomcat]# cat Dockerfile<br>
+FROM centos<br>
+MAINTAINER andi<a href="mailto:andidechuan@163.com">andidechuan@163.com</a></p>
+<p>COPY readme.txt /usr/local/readme.txt</p>
+<p>ADD jdk-8u60-linux-x64.tar.gz /usr/local/<br>
+ADD apache-tomcat-9.0.41.tar.gz /usr/local/</p>
+<p>RUN yum -y install vim</p>
+<p>ENV MYPATH /usr/local<br>
+WORKDIR $MYPATH</p>
+<p>ENV JAVA_HOME /usr/local/jdk1.8.0_60<br>
+ENV CLASSPATH <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>J</mi><mi>A</mi><mi>V</mi><msub><mi>A</mi><mi>H</mi></msub><mi>O</mi><mi>M</mi><mi>E</mi><mi mathvariant="normal">/</mi><mi>l</mi><mi>i</mi><mi>b</mi><mi mathvariant="normal">/</mi><mi>d</mi><mi>t</mi><mi mathvariant="normal">.</mi><mi>j</mi><mi>a</mi><mi>r</mi><mo>:</mo></mrow><annotation encoding="application/x-tex">JAVA_HOME/lib/dt.jar:</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathdefault" style="margin-right:0.09618em;">J</span><span class="mord mathdefault">A</span><span class="mord mathdefault" style="margin-right:0.22222em;">V</span><span class="mord"><span class="mord mathdefault">A</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.32833099999999993em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathdefault mtight" style="margin-right:0.08125em;">H</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mord mathdefault" style="margin-right:0.02778em;">O</span><span class="mord mathdefault" style="margin-right:0.10903em;">M</span><span class="mord mathdefault" style="margin-right:0.05764em;">E</span><span class="mord">/</span><span class="mord mathdefault" style="margin-right:0.01968em;">l</span><span class="mord mathdefault">i</span><span class="mord mathdefault">b</span><span class="mord">/</span><span class="mord mathdefault">d</span><span class="mord mathdefault">t</span><span class="mord">.</span><span class="mord mathdefault" style="margin-right:0.05724em;">j</span><span class="mord mathdefault">a</span><span class="mord mathdefault" style="margin-right:0.02778em;">r</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">:</span></span></span></span>JAVA_HOME/lib/tools.jar<br>
+ENV CATALINA_HOME /usr/local/apache-tomcat-9.0.41<br>
+ENV CATALINA_BASH /usr/local/apache-tomcat-9.0.41<br>
+ENV PATH <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>P</mi><mi>A</mi><mi>T</mi><mi>H</mi><mo>:</mo></mrow><annotation encoding="application/x-tex">PATH:</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathdefault" style="margin-right:0.13889em;">P</span><span class="mord mathdefault">A</span><span class="mord mathdefault" style="margin-right:0.13889em;">T</span><span class="mord mathdefault" style="margin-right:0.08125em;">H</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">:</span></span></span></span>JAVA_HOME/bin:<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>C</mi><mi>A</mi><mi>T</mi><mi>A</mi><mi>L</mi><mi>I</mi><mi>N</mi><msub><mi>A</mi><mi>H</mi></msub><mi>O</mi><mi>M</mi><mi>E</mi><mi mathvariant="normal">/</mi><mi>l</mi><mi>i</mi><mi>b</mi><mo>:</mo></mrow><annotation encoding="application/x-tex">CATALINA_HOME/lib:</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathdefault" style="margin-right:0.07153em;">C</span><span class="mord mathdefault">A</span><span class="mord mathdefault" style="margin-right:0.13889em;">T</span><span class="mord mathdefault">A</span><span class="mord mathdefault">L</span><span class="mord mathdefault" style="margin-right:0.07847em;">I</span><span class="mord mathdefault" style="margin-right:0.10903em;">N</span><span class="mord"><span class="mord mathdefault">A</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.32833099999999993em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathdefault mtight" style="margin-right:0.08125em;">H</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mord mathdefault" style="margin-right:0.02778em;">O</span><span class="mord mathdefault" style="margin-right:0.10903em;">M</span><span class="mord mathdefault" style="margin-right:0.05764em;">E</span><span class="mord">/</span><span class="mord mathdefault" style="margin-right:0.01968em;">l</span><span class="mord mathdefault">i</span><span class="mord mathdefault">b</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">:</span></span></span></span>CATALINA_HOME/bin</p>
+<p>EXPOSE 8080</p>
+<p>CMD /usr/local/apache-tomcat-9.0.41/bin/startup.sh &amp;&amp; tail -F /url/local/apache-tomcat-9.0.41/bin/logs/catalina.out<br>
+3、	构建镜像<br>
+#docker build -t zktomcat .<br>
+4、	启动镜像<br>
+5、	访问测试<br>
+6、	发布项目（由于做了卷挂载，我们直接在本地编写项目就可以发布了！）</p>
+<?xml version="1.0" encoding="UTF-8"?>
+<p><web-app xmlns="http://java.sun.com/xml/ns/javaee"
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
+                               http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+           version="2.5"></p>
+  </web-app>
+jsp
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>hello 赵科</title>
+</head>
+<body>
+Hello World!<br/>
+<%
+System.out.println(“----my test web logs----”);
+%>
+</body>
+</html>
+发现：项目部署成功，可以直接访问ok！
+<p>以后的开发步骤：需要掌握Dockerfile的编写！我们之后的一切都是使用docker镜像来发布运行！</p>
+<p>5.1.7 发布自己的镜像<br>
+Dockerhub<br>
+1、	地址https://hub.docker.com/注册自己的账号<br>
+2、	确定这个账号可以登录<br>
+3、	在服务器上提交自己的镜像<br>
+docker  login  -u 用户名  -p 密码<br>
+[root@ansible tomcat]# docker login -u 18730935776<br>
+Password:<br>
+WARNING! Your password will be stored unencrypted in /root/.docker/config.json.<br>
+Configure a credential helper to remove this warning. See<br>
+https://docs.docker.com/engine/reference/commandline/login/#credentials-store</p>
+<p>Login Succeeded<br>
+4、	登录完毕后就可以提交镜像了，就是一步docker  push<br>
+#push镜像的问题<br>
+[root@ansible tomcat]# docker push andi/zktomcat:0.1<br>
+The push refers to repository [docker.io/andi/zktomcat]<br>
+An image does not exist locally with the tag: andi/zktomcat<br>
+#解决，添一个tag<br>
+[root@ansible tomcat]# docker tag bd8499565efd 18730935776[必须要和自己的hub账号一样]/tomcat:1.0<br>
+#上传过程中发现一直连接超时，因为Hub网站是外网，所以在/etc/resolv.conf中添加一个8.8.8.8就可以了<br>
+Get https://registry-1.docker.io/v2/: dial tcp: lookup registry-1.docker.io on 8.8.8.8:53: read udp 192.168.2.101:40422-&gt;8.8.8.8:53: i/o timeout<br>
+#docker push上去即可！发布镜像时尽量带上版本号<br>
+[root@ansible ~]# docker push 18730935776/zktomcat:1.0</p>
+<p>提交的时候也是按照镜像的层级来进行提交的！<br>
+5.1.8 发布到阿里云镜像上<br>
+1、	登录到阿里云<br>
+2、	找到容器镜像服务<br>
+3、	创建命名空间</p>
+<p>4、	创建容器镜像</p>
+<p>5、	浏览</p>
+<p>阿里云容器上传参考官方文档就可以	<br>
+5.1.9 小结</p>
+<p>第6章 docker网络<br>
+6.1.1 理解docker0<br>
+第一步清空所有环境<br>
+测试</p>
+<p>三个网络<br>
+#问题，docker是如何处理容器网络访问的？</p>
+<p>#运行一个容器<br>
+[root@localhost ~]# docker run -d -P --name tomcat01 tomcat<br>
+#查看容器的内部网络地址 ip addr，发现容器启动的时候<br>
+[root@localhost ~]# docker exec -it tomcat01 ip addr<br>
+1: lo: &lt;LOOPBACK,UP,LOWER_UP&gt; mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000<br>
+link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00<br>
+inet 127.0.0.1/8 scope host lo<br>
+valid_lft forever preferred_lft forever<br>
+6: eth0@if7: &lt;BROADCAST,MULTICAST,UP,LOWER_UP&gt; mtu 1500 qdisc noqueue state UP group default<br>
+link/ether 02:42:ac:11:00:02 brd ff:ff:ff:ff:ff:ff link-netnsid 0<br>
+inet 172.17.0.2/16 brd 172.17.255.255 scope global eth0<br>
+valid_lft forever preferred_lft forever</p>
+<p>#通过ping命令查看linux能否联通容器内部<br>
+[root@localhost ~]# ping 172.17.0.2<br>
+PING 172.17.0.2 (172.17.0.2) 56(84) bytes of data.<br>
+64 bytes from 172.17.0.2: icmp_seq=1 ttl=64 time=0.447 ms<br>
+64 bytes from 172.17.0.2: icmp_seq=2 ttl=64 time=0.060 ms<br>
+原理<br>
+1、	我们每启动一个docker容器，docker就会给docker容器分配一个ip，我们只要安装了docker，就会有一个网卡docker0桥接模式，使用的技术是vethc -pair技术！<br>
+再次测试ip addr</p>
+<p>2、在启动了一个容器测试时，发现又多了一对网卡</p>
+<p>#我们发现这个容器带来网卡，都是一对对的</p>
+<h1 id="vethc-pair就是一堆的虚拟设备接口他们都是成对出现的一端连着协议一端彼此相连-4">vethc -pair就是一堆的虚拟设备接口，他们都是成对出现的，一端连着协议，一端彼此相连</h1>
+<p>#正因为有这个特性，vethc-pair充当一个桥梁，连接各州虚拟网络设备的<br>
+#OpenStac，Docker容器之间的连接，ovs的连接，都是使用vethc -pair技术<br>
+3、测试tomcat01和tomcat02是否可以ping通！<br>
+[root@localhost ~]# docker exec -it tomcat02 ping 172.17.0.2<br>
+#结论，容器和容器之间是可以互相ping通的！<br>
+如图一个网络模型图：</p>
+<p>结论：tomcat01和tomcat02是公用的一个路由器，docker0.<br>
+所有的容器不指定网络的情况下，都是docker0路由的，docker会给我们的容器分配一个默认的可用ip<br>
+小结<br>
+Docker使用的是Liunx 的桥接</p>
+<p>Docker中的所有网络接口都是虚拟的，虚拟的转发效率更高（内网传递文件！）<br>
+只要容器删除，对应网桥一对就没了！</p>
+<p>6.1.2 –link<br>
+思考一个场景，我们编写了一个微服务，database url=ip，项目不重启，数据库ip换掉了，我们希望可以梳理这个问题，可以用名字来进行访问容器？<br>
+[root@zhaoke ~]# docker exec -it tomcat02 ping tomcat01<br>
+ping: tomcat01: Name or service not known<br>
+#直接使用ping命令无法ping通，如何可以解决<br>
+#通过—link既可以解决了网络连通问题<br>
+[root@zhaoke ~]# docker run -d -P --name tomcat03 --link tomcat02 tomcat<br>
+[root@zhaoke ~]# docker exec -it tomcat03 ping tomcat02<br>
+PING tomcat02 (172.17.0.3) 56(84) bytes of data.<br>
+64 bytes from tomcat02 (172.17.0.3): icmp_seq=1 ttl=64 time=0.110 ms<br>
+64 bytes from tomcat02 (172.17.0.3): icmp_seq=2 ttl=64 time=0.130 ms<br>
+#反向无法ping通<br>
+[root@zhaoke ~]# docker exec -it tomcat02 ping tomcat03<br>
+ping: tomcat03: Name or service not known<br>
+探究：inspect</p>
+<p>其实这个tomcat03就是在本地配置了tomcat02的地址<br>
+#查看hosts配置，在这里原理发现<br>
+[root@zhaoke ~]# docker exec -it tomcat03 cat /etc/hosts<br>
+127.0.0.1	localhost<br>
+::1	localhost ip6-localhost ip6-loopback<br>
+fe00::0	ip6-localnet<br>
+ff00::0	ip6-mcastprefix<br>
+ff02::1	ip6-allnodes<br>
+ff02::2	ip6-allrouters<br>
+172.17.0.3	tomcat02 ec420d642219<br>
+172.17.0.4	c97b9380df41<br>
+本质探究：--link就是我们在hosts配置中增加了一个172.18.0.3 tomcat02 IP地址<br>
+我们现在使用Docker已经不建议使用—link了！<br>
+自定义网络！不适用docker0！<br>
+docker0问题：它不支持容器连接访问！<br>
+6.1.3 自定义网络</p>
 
           </div>
         </div>
